@@ -73,7 +73,7 @@ const testimonials = [
     id: 1,
     name: "Sarah Mitchell",
     role: "CEO, TechStart Solutions",
-    content: "WebWagon transformed our online presence completely. We went from 50 leads per month to over 200, and our revenue increased by 150% in just 6 months.",
+    content: "Web Vello transformed our online presence completely. We went from 50 leads per month to over 200, and our revenue increased by 150% in just 6 months.",
     rating: 5,
     company: "TechStart Solutions"
   },
@@ -89,7 +89,7 @@ const testimonials = [
     id: 3,
     name: "Jennifer Chen",
     role: "Founder, LegalTech Pro",
-    content: "Professional, results-driven, and incredibly effective. WebWagon helped us establish authority in our niche and attract high-value clients consistently.",
+    content: "Professional, results-driven, and incredibly effective. Web Vello helped us establish authority in our niche and attract high-value clients consistently.",
     rating: 5,
     company: "LegalTech Pro"
   }
@@ -223,7 +223,7 @@ export default function HomePage() {
               Digital Marketing Excellence
             </div>
             <h2 className="text-4xl lg:text-5xl font-bold text-secondary-900 mb-6">
-              Why Choose WebWagon for Your Digital Marketing Needs?
+              Why Choose Web Vello for Your Digital Marketing Needs?
             </h2>
             <p className="text-xl text-secondary-600 max-w-3xl mx-auto">
               Discover how our data-driven approach to SEO, web development, and digital marketing 
@@ -327,7 +327,7 @@ export default function HomePage() {
                 Digital Marketing Services Available Nationwide
               </h3>
               <p className="text-lg text-secondary-600 max-w-4xl mx-auto">
-                WebWagon provides comprehensive digital marketing solutions including SEO, web development, 
+                Web Vello provides comprehensive digital marketing solutions including SEO, web development, 
                 UI/UX design, and software development. Our services help businesses across all industries 
                 improve their online presence, increase search visibility, and drive sustainable revenue growth.
               </p>
@@ -376,7 +376,7 @@ export default function HomePage() {
               <h2 className="text-2xl sm:text-3xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight">
                 Transform Your Website into a Lead Generation Machine with{' '}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-cyan-300">
-                  WebWagon
+                  Web Vello
                 </span>
               </h2>
               
@@ -443,7 +443,7 @@ export default function HomePage() {
                 <div className="w-full h-full bg-gradient-to-b from-blue-400 to-purple-500 rounded-full animate-pulse"></div>
               </div>
 
-              {/* Middle Level - WebWagon Processing */}
+              {/* Middle Level - Web Vello Processing */}
               <div className="absolute top-44 left-1/2 -translate-x-1/2">
                 <div className="text-center">
                   <div className="w-32 h-32 bg-gradient-to-br from-white to-gray-100 rounded-3xl flex flex-col items-center justify-center shadow-2xl mb-4 relative overflow-hidden">

@@ -338,8 +338,8 @@ export function Header() {
                 <Rocket className="h-7 w-7 text-white" />
               </div>
               <div className="flex flex-col">
-                <span className="text-2xl font-bold text-primary-600 group-hover:text-primary-700 transition-colors">Digital</span>
-                <span className="text-2xl font-bold text-secondary-900 group-hover:text-secondary-800 transition-colors">Wagon</span>
+                <span className="text-2xl font-bold text-primary-600 group-hover:text-primary-700 transition-colors">Web</span>
+                <span className="text-2xl font-bold text-secondary-900 group-hover:text-secondary-800 transition-colors">Vello</span>
               </div>
             </Link>
           </div>
@@ -458,8 +458,8 @@ export function Header() {
                     <Rocket className="h-6 w-6 text-white" />
                   </div>
                   <div className="flex flex-col">
-                    <span className="text-lg font-bold text-primary-600">Digital</span>
-                    <span className="text-lg font-bold text-secondary-900">Wagon</span>
+                    <span className="text-lg font-bold text-primary-600">Web</span>
+                    <span className="text-lg font-bold text-secondary-900">Vello</span>
                   </div>
                 </div>
               </Link>

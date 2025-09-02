@@ -1,10 +1,10 @@
 import { Metadata } from 'next'
 
 export const defaultMetadata: Metadata = {
-  metadataBase: new URL('https://webwagon.com'),
+  metadataBase: new URL('https://webvello.com'),
   title: {
-    default: 'WebWagon - Digital Marketing Agency | AI SEO, Local SEO, Web Development',
-    template: '%s | WebWagon'
+    default: 'Web Vello - Digital Marketing Agency | AI SEO, Local SEO, Web Development',
+    template: '%s | Web Vello'
   },
   description: 'Drive revenue growth with data-driven digital marketing. Specializing in AI-powered SEO, local search dominance, and conversion-focused web development. Get 300%+ traffic growth in 6 months.',
   keywords: [

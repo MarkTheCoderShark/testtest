@@ -1,7 +1,8 @@
-import { MetadataRoute } from 'next'
+i /l
+mport { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://webwagon.com'
+  const baseUrl = 'https://webvello.com'
   
   // Static pages
   const staticPages = [

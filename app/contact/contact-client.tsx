@@ -67,7 +67,7 @@ const testimonials = [
     name: "Sarah Johnson",
     company: "TechStart Inc.",
     role: "CEO",
-    content: "WebWagon transformed our online presence. Our organic traffic increased by 300% in just 6 months!",
+    content: "Web Vello transformed our online presence. Our organic traffic increased by 300% in just 6 months!",
     rating: 5,
     avatar: "/testimonials/sarah-johnson.jpg"
   },
@@ -430,7 +430,7 @@ export function ContactPageClient() {
             {/* Why Choose Us */}
             <div className="space-y-8">
               <div>
-                <h2 className="text-3xl font-bold text-gray-900 mb-6">Why Choose WebWagon?</h2>
+                <h2 className="text-3xl font-bold text-gray-900 mb-6">Why Choose Web Vello?</h2>
                 <div className="space-y-6">
                   <div className="flex items-start">
                     <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-100 mr-4">
@@ -496,7 +496,7 @@ export function ContactPageClient() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">What Our Clients Say</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
-              Don't just take our word for it. Here's what our clients have to say about working with WebWagon.
+              Don't just take our word for it. Here's what our clients have to say about working with Web Vello.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -552,7 +552,7 @@ export function ContactPageClient() {
             Ready to Transform Your Digital Presence?
           </h2>
           <p className="text-xl text-blue-100 mb-8">
-            Join hundreds of businesses that have achieved remarkable growth with WebWagon.
+            Join hundreds of businesses that have achieved remarkable growth with Web Vello.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
