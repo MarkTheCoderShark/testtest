@@ -1,13 +1,13 @@
-# WebWagon Project Structure
+# Web Vello Project Structure
 
 ## 🏗️ Complete Project Architecture
 
-This document outlines the comprehensive structure of the WebWagon digital marketing agency website, including Next.js 14 setup, Sanity CMS integration, and all content schemas.
+This document outlines the comprehensive structure of the Web Vello digital marketing agency website, including Next.js 14 setup, Sanity CMS integration, and all content schemas.
 
 ## 📁 Directory Structure
 
 ```
-/Users/george/Webwagon/
+/Users/george/WebVello/
 ├── app/                          # Next.js 14 App Router
 │   ├── layout.tsx               # Root layout with Header
 │   ├── page.tsx                 # Homepage
@@ -69,7 +69,7 @@ This document outlines the comprehensive structure of the WebWagon digital marke
 
 ## 🎨 Design System
 
-### Color Palette (WebFX-Inspired)
+### Color Palette
 ```css
 Primary Colors:
 - Congress Blue: #004085 (primary-600)
@@ -295,7 +295,7 @@ http://localhost:3000/studio
 - **Workflow**: Draft, review, and publish process
 
 ### For Business
-- **Professional Design**: WebFX-inspired aesthetics
+- **Professional Design**: Modern, clean aesthetics
 - **Conversion Focused**: Optimized for lead generation
 - **Scalable**: Easy to add new services and content
 - **Performance**: Fast loading and user experience

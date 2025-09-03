@@ -63,7 +63,6 @@ export function useConversionTracking() {
       // Track as conversion goal
       window.gtag('event', 'conversion', {
         send_to: `${process.env.NEXT_PUBLIC_GA_ID}/${event.goal}`,
-        value: eventData.value,
         currency: 'USD',
         transaction_id: generateTransactionId(),
         ...eventData
@@ -297,7 +296,7 @@ export function useConversionTracking() {
       if ('PerformanceObserver' in window) {
         const observer = new PerformanceObserver((list) => {
           for (const entry of list.getEntries()) {
-            if (entry.name === 'LCP') {
+            if (entry.name === 'LCP' && window.gtag) {
               window.gtag('event', 'web_vitals', {
                 event_category: 'Web Vitals',
                 event_label: 'LCP',
@@ -305,19 +304,19 @@ export function useConversionTracking() {
                 page_path: pathname
               })
             }
-            if (entry.name === 'FID') {
+            if (entry.name === 'FID' && window.gtag) {
               window.gtag('event', 'web_vitals', {
                 event_category: 'Web Vitals',
                 event_label: 'FID',
-                value: Math.round(entry.processingStart - entry.startTime),
+                value: Math.round(entry.duration || 0),
                 page_path: pathname
               })
             }
-            if (entry.name === 'CLS') {
+            if (entry.name === 'CLS' && window.gtag) {
               window.gtag('event', 'web_vitals', {
                 event_category: 'Web Vitals',
                 event_label: 'CLS',
-                value: Math.round(entry.value * 1000),
+                value: Math.round((entry as any).value * 1000 || 0),
                 page_path: pathname
               })
             }

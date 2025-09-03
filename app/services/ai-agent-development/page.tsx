@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button'
-import { ArrowRight, Bot, Zap, Users, BarChart3, Shield, Clock, Target } from 'lucide-react'
+import { ArrowRight, Bot, Zap, Users, BarChart3, Shield, Clock, Target, Code, FileText, ShoppingBag } from 'lucide-react'
 import Link from 'next/link'
 
 export default function AIAgentDevelopmentPage() {

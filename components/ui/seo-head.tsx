@@ -27,11 +27,11 @@ export function SEOHead({
   noIndex = false,
   publishedTime,
   modifiedTime,
-  author = 'WebWagon',
+  author = 'Web Vello',
   section,
   tags = []
 }: SEOHeadProps) {
-  const fullTitle = title.includes('WebWagon') ? title : `${title} | WebWagon`
+  const fullTitle = title.includes('Web Vello') ? title : `${title} | Web Vello`
   const fullDescription = description.length > 160 ? description.substring(0, 157) + '...' : description
   
   const defaultStructuredData = {
@@ -39,11 +39,11 @@ export function SEOHead({
     "@type": "WebPage",
     "name": title,
     "description": description,
-    "url": canonical || `https://webwagon.com${typeof window !== 'undefined' ? window.location.pathname : ''}`,
+    "url": canonical || `https://webvello.com${typeof window !== 'undefined' ? window.location.pathname : ''}`,
     "mainEntity": {
       "@type": "Organization",
-      "name": "WebWagon",
-      "url": "https://webwagon.com"
+      "name": "Web Vello",
+      "url": "https://webvello.com"
     }
   }
 
@@ -72,8 +72,8 @@ export function SEOHead({
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <meta property="og:image:alt" content={title} />
-      <meta property="og:site_name" content="WebWagon" />
-      <meta property="og:url" content={canonical || `https://webwagon.com${typeof window !== 'undefined' ? window.location.pathname : ''}`} />
+      <meta property="og:site_name" content="Web Vello" />
+      <meta property="og:url" content={canonical || `https://webvello.com${typeof window !== 'undefined' ? window.location.pathname : ''}`} />
       <meta property="og:locale" content="en_US" />
       
       {/* Twitter Card */}
@@ -81,8 +81,8 @@ export function SEOHead({
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={fullDescription} />
       <meta name="twitter:image" content={ogImage} />
-      <meta name="twitter:site" content="@webwagon" />
-      <meta name="twitter:creator" content="@webwagon" />
+      <meta name="twitter:site" content="@webvello" />
+      <meta name="twitter:creator" content="@webvello" />
       
       {/* Article specific meta tags */}
       {ogType === 'article' && publishedTime && (
@@ -113,8 +113,8 @@ export function SEOHead({
       
       {/* Additional Meta Tags */}
       <meta name="author" content={author} />
-      <meta name="publisher" content="WebWagon" />
-      <meta name="copyright" content="WebWagon" />
+      <meta name="publisher" content="Web Vello" />
+      <meta name="copyright" content="Web Vello" />
       <meta name="language" content="en" />
       <meta name="revisit-after" content="7 days" />
       <meta name="distribution" content="global" />
@@ -125,8 +125,8 @@ export function SEOHead({
       <meta name="theme-color" content="#4C74B9" />
       <meta name="apple-mobile-web-app-capable" content="yes" />
       <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-      <meta name="apple-mobile-web-app-title" content="WebWagon" />
-      <meta name="application-name" content="WebWagon" />
+      <meta name="apple-mobile-web-app-title" content="Web Vello" />
+      <meta name="application-name" content="Web Vello" />
       <meta name="mobile-web-app-capable" content="yes" />
       
       {/* Preload critical resources */}

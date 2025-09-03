@@ -1,7 +1,7 @@
 # 🎯 Conversion Tracking Setup Guide
 
 ## **Overview**
-This guide will help you set up comprehensive conversion tracking for WebWagon to measure lead generation success and optimize your marketing efforts.
+This guide will help you set up comprehensive conversion tracking for Web Vello to measure lead generation success and optimize your marketing efforts.
 
 ## **🚀 Quick Start**
 
@@ -25,7 +25,7 @@ NEXT_PUBLIC_LOG_CONVERSIONS=false
 
 ### **2. Google Analytics 4 Setup**
 1. Go to [Google Analytics](https://analytics.google.com/)
-2. Create a new GA4 property for WebWagon
+2. Create a new GA4 property for Web Vello
 3. Copy your Measurement ID (format: G-XXXXXXXXXX)
 4. Replace `G-XXXXXXXXXX` in your `.env.local` file
 

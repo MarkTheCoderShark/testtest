@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button'
-import { ArrowRight, Layers, Zap, Database, Shield, Users, BarChart3, Globe } from 'lucide-react'
+import { ArrowRight, Layers, Zap, Database, Shield, Users, BarChart3, Globe, Code, FileText, ShoppingBag } from 'lucide-react'
 import Link from 'next/link'
 
 export default function AIGPTIntegrationPage() {

@@ -48,7 +48,7 @@ const demoPricingTiers = [
     features: ['Basic analytics', 'Email support', '5 projects', 'Mobile responsive'],
     excluded: ['Advanced features', 'Priority support'],
     popular: false,
-    icon: Zap,
+    iconName: 'Zap',
     gradient: 'from-blue-500 to-cyan-600',
     cta: 'Get Started',
     href: '/contact'
@@ -61,7 +61,7 @@ const demoPricingTiers = [
     features: ['Advanced analytics', 'Priority support', 'Unlimited projects', 'Custom integrations'],
     excluded: ['Enterprise features'],
     popular: true,
-    icon: Star,
+    iconName: 'Star',
     gradient: 'from-purple-500 to-pink-600',
     cta: 'Get Started',
     href: '/contact'
@@ -74,7 +74,7 @@ const demoPricingTiers = [
     features: ['Enterprise analytics', '24/7 support', 'Custom solutions', 'Dedicated manager'],
     excluded: [],
     popular: false,
-    icon: Award,
+    iconName: 'Award',
     gradient: 'from-green-500 to-emerald-600',
     cta: 'Contact Sales',
     href: '/contact'
@@ -121,9 +121,9 @@ export default function EnhancedDemoPage() {
           "Mobile responsive"
         ]}
         stats={[
-          { value: "40%", label: "Engagement Boost", icon: TrendingUp },
-          { value: "2.5x", label: "Faster Loading", icon: Zap },
-          { value: "95%", label: "User Satisfaction", icon: Users }
+          { value: "40%", label: "Engagement Boost", iconName: "TrendingUp" },
+          { value: "2.5x", label: "Faster Loading", iconName: "Zap" },
+          { value: "95%", label: "User Satisfaction", iconName: "Users" }
         ]}
         background="pattern"
       />

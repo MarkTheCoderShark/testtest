@@ -294,6 +294,18 @@ const navigation = [
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [openDropdown, setOpenDropdown] = useState<string | null>(null)
+  const [hoverTimeout, setHoverTimeout] = useState<NodeJS.Timeout | null>(null)
+
+  // Debug function
+  const handleDropdownClick = (itemName: string) => {
+    console.log('Dropdown clicked:', itemName);
+    console.log('Current openDropdown:', openDropdown);
+    setOpenDropdown(openDropdown === itemName ? null : itemName);
+    console.log('New openDropdown will be:', openDropdown === itemName ? null : itemName);
+  }
+
+  // Test if React is working
+  console.log('Header component rendered, openDropdown:', openDropdown);
 
   return (
     <header className="bg-white shadow-lg sticky top-0 z-50 border-b border-gray-100">
@@ -321,7 +333,7 @@ export function Header() {
               </Link>
               <Link href="/contact" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
                 <Phone className="h-4 w-4" />
-                <span className="font-semibold">888-601-5359</span>
+                <span className="font-semibold">737-888-5723</span>
               </Link>
             </div>
           </div>
@@ -356,16 +368,45 @@ export function Header() {
                 {item.children ? (
                   <div
                     className="relative"
-                    onMouseEnter={() => setOpenDropdown(item.name)}
-                    onMouseLeave={() => setOpenDropdown(null)}
+                    onMouseEnter={() => {
+                      if (hoverTimeout) {
+                        clearTimeout(hoverTimeout)
+                        setHoverTimeout(null)
+                      }
+                      setOpenDropdown(item.name)
+                    }}
+                    onMouseLeave={() => {
+                      const timeout = setTimeout(() => {
+                        setOpenDropdown(null)
+                      }, 150)
+                      setHoverTimeout(timeout)
+                    }}
                   >
-                    <button className="flex items-center gap-x-1 px-4 py-3 text-sm font-semibold leading-6 text-secondary-900 hover:text-primary-600 transition-colors rounded-lg hover:bg-gray-50 group-hover:bg-primary-50 group-hover:text-primary-600">
+                    <div 
+                      className="flex items-center gap-x-1 px-4 py-3 text-sm font-semibold leading-6 text-secondary-900 hover:text-primary-600 transition-colors rounded-lg hover:bg-gray-50 group-hover:bg-primary-50 group-hover:text-primary-600 cursor-pointer"
+                      onClick={() => handleDropdownClick(item.name)}
+                    >
                       {item.name}
                       <ChevronDown className="h-4 w-4 transition-transform group-hover:rotate-180" />
-                    </button>
+                    </div>
                     
                     {openDropdown === item.name && (
-                      <div className="absolute left-1/2 z-10 mt-2 flex w-screen max-w-4xl -translate-x-1/2 px-4">
+                      <div 
+                        className="absolute left-1/2 z-[9999] mt-2 flex w-screen max-w-4xl -translate-x-1/2 px-4"
+                        onMouseEnter={() => {
+                          if (hoverTimeout) {
+                            clearTimeout(hoverTimeout)
+                            setHoverTimeout(null)
+                          }
+                          setOpenDropdown(item.name)
+                        }}
+                        onMouseLeave={() => {
+                          const timeout = setTimeout(() => {
+                            setOpenDropdown(null)
+                          }, 150)
+                          setHoverTimeout(timeout)
+                        }}
+                      >
                         <div className="w-screen max-w-4xl flex-auto overflow-hidden rounded-2xl bg-white text-sm leading-6 shadow-2xl ring-1 ring-secondary-900/5 border border-gray-100">
                           <div className="p-8">
                             {/* Header */}

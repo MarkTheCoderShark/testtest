@@ -5,7 +5,7 @@ import { schemaTypes } from './schemas'
 
 export default defineConfig({
   name: 'default',
-  title: 'WebWagon CMS',
+  title: 'Web Vello CMS',
   projectId: 'your-project-id',
   dataset: 'production',
   basePath: '/studio',

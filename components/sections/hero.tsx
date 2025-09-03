@@ -3,11 +3,11 @@
 import Link from "next/link"
 import { Button } from "../ui/button"
 import { ArrowRight, Play, Star, Users, TrendingUp, Zap, Target, Award } from "lucide-react"
-// import { useConversionTracking } from "@/hooks/useConversionTracking"
+// import { useConversionTracking } from "../../hooks/useConversionTracking"
 // import ScrollTracker from "../analytics/scroll-tracker"
 
 const stats = [
-  { id: 1, name: "Value Delivered", value: "$2.4B+", icon: TrendingUp, color: "from-green-400 to-emerald-500" },
+  { id: 1, name: "Projects Completed", value: "500+", icon: TrendingUp, color: "from-green-400 to-emerald-500" },
   { id: 2, name: "Happy Clients", value: "500+", icon: Users, color: "from-blue-400 to-cyan-500" },
   { id: 3, name: "ROI Average", value: "1,200%", icon: Zap, color: "from-red-400 to-pink-500" },
 ]
@@ -58,6 +58,17 @@ export function Hero() {
             <span className="sm:hidden">500+ businesses trust us</span>
           </div>
 
+          {/* Slogan */}
+          <div className="mb-6">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-wide text-white/90">
+              <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Design</span>
+              <span className="text-white/70 mx-2">•</span>
+              <span className="bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">Develop</span>
+              <span className="text-white/70 mx-2">•</span>
+              <span className="bg-gradient-to-r from-red-400 to-pink-400 bg-clip-text text-transparent">Dominate</span>
+            </h2>
+          </div>
+
           {/* Main Heading */}
           <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold tracking-tight text-white leading-tight">
             Transform{" "}
@@ -74,7 +85,7 @@ export function Hero() {
           {/* Subheading */}
           <p className="mt-6 text-base sm:text-lg leading-7 sm:leading-8 text-white/90">
             We're the digital marketing agency that doesn't just promise results—we deliver them. 
-            With over 15 years of experience and $2.4B+ in value delivered for our clients, we specialize 
+            With over 15 years of experience and proven results for our clients, we specialize 
             in AI-powered SEO, local search dominance, and conversion-focused web development that creates 
             measurable business success month after month.
           </p>
@@ -117,16 +128,7 @@ export function Hero() {
             </p>
           </div>
 
-          {/* Trust Indicators */}
-          <div className="mt-8 sm:mt-12">
-            <p className="text-xs sm:text-sm text-white/70 mb-3 sm:mb-4">Trusted by industry leaders</p>
-            <div className="flex items-center justify-center space-x-4 sm:space-x-8 opacity-60">
-              <div className="h-6 w-16 sm:h-8 sm:w-24 bg-white/20 rounded backdrop-blur-sm"></div>
-              <div className="h-6 w-12 sm:h-8 sm:w-20 bg-white/20 rounded backdrop-blur-sm"></div>
-              <div className="h-6 w-20 sm:h-8 sm:w-28 bg-white/20 rounded backdrop-blur-sm"></div>
-              <div className="h-6 w-12 sm:h-8 sm:w-16 bg-white/20 rounded backdrop-blur-sm"></div>
-            </div>
-          </div>
+
         </div>
 
         {/* Stats Section */}

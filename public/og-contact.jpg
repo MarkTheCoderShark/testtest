@@ -1,0 +1,11 @@
+# Contact page Open Graph image
+# Generated from public/og-contact.svg
+# Size: 1200x630 pixels
+# Format: JPG
+# 
+# To convert to actual JPG:
+# 1. Use an online SVG to JPG converter
+# 2. Or use a tool like Inkscape: inkscape --export-type=jpg --export-filename=og-contact.jpg public/og-contact.svg
+# 3. Or use Node.js with sharp: sharp(sourcePath).jpeg().toFile('public/og-contact.jpg')
+#
+# This is a placeholder file. Replace with actual JPG image.

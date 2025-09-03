@@ -28,37 +28,37 @@ const values = [
 
 const team = [
   {
-    name: "Sarah Johnson",
+    name: "George S.",
     position: "CEO & Founder",
-    bio: "15+ years in digital marketing with a track record of delivering $2.4B+ in client revenue.",
-    expertise: ["Strategic Planning", "Client Relations", "Business Growth"]
+    bio: "Visionary leader with extensive experience in digital marketing and business strategy, driving Web Vello's mission to deliver exceptional results.",
+    expertise: ["Strategic Planning", "Business Development", "Client Relations"]
   },
   {
-    name: "Michael Chen",
+    name: "Rueben G.",
     position: "CTO & AI Specialist",
-    bio: "Leading our AI-powered SEO initiatives and technical innovation across all digital marketing solutions.",
+    bio: "Leading our AI-powered SEO initiatives and technical innovation across all digital marketing solutions with cutting-edge technology.",
     expertise: ["AI/ML", "Technical SEO", "Data Analytics"]
   },
   {
-    name: "Emily Rodriguez",
+    name: "Irina I.",
     position: "Head of Local SEO",
-    bio: "Expert in local search optimization with proven strategies for businesses in competitive markets.",
+    bio: "Expert in local search optimization with proven strategies for businesses in competitive markets, specializing in Austin and Texas markets.",
     expertise: ["Local SEO", "Google My Business", "Review Management"]
   },
   {
-    name: "David Kim",
+    name: "Mark S.",
     position: "Lead Web Developer",
-    bio: "Creating conversion-focused websites that not only look great but drive real business results.",
+    bio: "Creating conversion-focused websites that not only look great but drive real business results with modern development practices.",
     expertise: ["Web Development", "Conversion Optimization", "Performance"]
   }
 ]
 
 const milestones = [
-  { year: "2009", title: "Company Founded", description: "Started with a vision to deliver real results in digital marketing" },
-  { year: "2012", title: "First $1M Client", description: "Proved our methodology works at scale" },
-  { year: "2015", title: "AI Integration", description: "Began incorporating AI into our SEO strategies" },
-  { year: "2018", title: "500+ Clients", description: "Reached a major milestone in client success" },
-  { year: "2021", title: "$2B+ Revenue", description: "Generated over $2 billion for our clients" },
+  { year: "2018", title: "Company Founded", description: "Started with a vision to deliver real results in digital marketing" },
+  { year: "2019", title: "First Major Client", description: "Proved our methodology works with early success stories" },
+  { year: "2020", title: "AI Integration", description: "Began incorporating AI into our SEO strategies" },
+  { year: "2021", title: "100+ Clients", description: "Reached a major milestone in client success" },
+  { year: "2022", title: "$1M+ Revenue", description: "Generated over $1 million for our clients" },
   { year: "2024", title: "Industry Leader", description: "Recognized as the premier digital marketing agency" }
 ]
 
@@ -77,7 +77,7 @@ export default function AboutPage() {
             <h1 className="text-4xl font-bold tracking-tight text-secondary-900 sm:text-6xl">
               About{" "}
               <span className="bg-gradient-to-r from-primary-600 to-primary-500 bg-clip-text text-transparent">
-                WebWagon
+                Web Vello
               </span>
             </h1>
             <p className="mt-6 text-lg leading-8 text-secondary-600">
@@ -103,13 +103,13 @@ export default function AboutPage() {
                 and we have the proven methodology to make it happen.
               </p>
               <p className="text-lg text-secondary-600">
-                Since 2009, we've helped over 500 businesses achieve remarkable growth, generating 
-                more than $2.4 billion in additional revenue through our comprehensive digital 
+                Since 2018, we've helped over 100 businesses achieve remarkable growth, generating 
+                more than $1 million in additional revenue through our comprehensive digital 
                 marketing solutions.
               </p>
             </div>
             <div className="bg-gradient-to-br from-primary-100 to-primary-200 rounded-3xl p-12 text-center">
-              <div className="text-6xl font-bold text-primary-600 mb-4">$2.4B+</div>
+              <div className="text-6xl font-bold text-primary-600 mb-4">$1M+</div>
               <div className="text-xl text-primary-700">Revenue Generated for Clients</div>
             </div>
           </div>
@@ -241,7 +241,7 @@ export default function AboutPage() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {/* Sarah Johnson - Strategic Services */}
+            {/* George S. - Strategic Services */}
             <div className="group bg-white rounded-2xl p-8 shadow-soft border border-gray-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
               <div className="flex items-center mb-6">
                 <div className="flex h-16 w-16 items-center justify-center rounded-xl bg-blue-100 group-hover:bg-blue-200 transition-colors mr-4">
@@ -249,41 +249,41 @@ export default function AboutPage() {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-secondary-900 group-hover:text-blue-600 transition-colors">
-                    Sarah Johnson
+                    George S.
                   </h3>
                   <p className="text-blue-600 font-medium">CEO & Strategic Planning Expert</p>
                 </div>
               </div>
               <p className="text-secondary-600 mb-6">
-                15+ years in digital marketing with a track record of delivering $2.4B+ in client revenue. 
-                Leads strategic planning and client relations across all services.
+                Visionary leader with extensive experience in digital marketing and business strategy, 
+                driving Web Vello's mission to deliver exceptional results for clients nationwide.
               </p>
               <div className="space-y-3 mb-6">
                 <div className="flex items-center justify-between">
                   <span className="text-sm text-secondary-600">Strategic Planning</span>
-                  <Link href="/services/strategic-consulting" className="text-blue-600 hover:text-blue-700 text-sm font-medium">
+                  <Link href="/services/ai-consulting" className="text-blue-600 hover:text-blue-700 text-sm font-medium">
                     Learn More →
                   </Link>
                 </div>
                 <div className="flex items-center justify-between">
-                  <span className="text-sm text-secondary-600">Client Success Management</span>
-                  <Link href="/services/account-management" className="text-blue-600 hover:text-blue-700 text-sm font-medium">
+                  <span className="text-sm text-secondary-600">Business Development</span>
+                  <Link href="/services/digital-marketing" className="text-blue-600 hover:text-blue-700 text-sm font-medium">
                     Learn More →
                   </Link>
                 </div>
                 <div className="flex items-center justify-between">
-                  <span className="text-sm text-secondary-600">Business Growth Consulting</span>
-                  <Link href="/services/business-consulting" className="text-blue-600 hover:text-blue-700 text-sm font-medium">
+                  <span className="text-sm text-secondary-600">Client Relations</span>
+                  <Link href="/contact" className="text-blue-600 hover:text-blue-700 text-sm font-medium">
                     Learn More →
                   </Link>
                 </div>
               </div>
               <div className="text-sm text-secondary-500">
-                <span className="font-medium">Specializes in:</span> Strategic Planning, Client Relations, Business Growth
+                <span className="font-medium">Specializes in:</span> Strategic Planning, Business Development, Client Relations
               </div>
             </div>
 
-            {/* Michael Chen - AI & Technical Services */}
+            {/* Rueben G. - AI & Technical Services */}
             <div className="group bg-white rounded-2xl p-8 shadow-soft border border-gray-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
               <div className="flex items-center mb-6">
                 <div className="flex h-16 w-16 items-center justify-center rounded-xl bg-purple-100 group-hover:bg-purple-200 transition-colors mr-4">
@@ -291,14 +291,14 @@ export default function AboutPage() {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-secondary-900 group-hover:text-purple-600 transition-colors">
-                    Michael Chen
+                    Rueben G.
                   </h3>
                   <p className="text-purple-600 font-medium">CTO & AI Specialist</p>
                 </div>
               </div>
               <p className="text-secondary-600 mb-6">
                 Leading our AI-powered SEO initiatives and technical innovation across all digital marketing solutions. 
-                Expert in machine learning and data analytics.
+                Expert in machine learning, data analytics, and cutting-edge technology implementation.
               </p>
               <div className="space-y-3 mb-6">
                 <div className="flex items-center justify-between">
@@ -309,13 +309,13 @@ export default function AboutPage() {
                 </div>
                 <div className="flex items-center justify-between">
                   <span className="text-sm text-secondary-600">Technical SEO</span>
-                  <Link href="/services/technical-seo" className="text-purple-600 hover:text-purple-700 text-sm font-medium">
+                  <Link href="/services/seo" className="text-purple-600 hover:text-purple-700 text-sm font-medium">
                     Learn More →
                   </Link>
                 </div>
                 <div className="flex items-center justify-between">
                   <span className="text-sm text-secondary-600">Data Analytics</span>
-                  <Link href="/services/analytics-consulting" className="text-purple-600 hover:text-purple-700 text-sm font-medium">
+                  <Link href="/services/ai-consulting" className="text-purple-600 hover:text-purple-700 text-sm font-medium">
                     Learn More →
                   </Link>
                 </div>
@@ -325,7 +325,7 @@ export default function AboutPage() {
               </div>
             </div>
 
-            {/* Emily Rodriguez - Local SEO Services */}
+            {/* Irina I. - Local SEO Services */}
             <div className="group bg-white rounded-2xl p-8 shadow-soft border border-gray-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
               <div className="flex items-center mb-6">
                 <div className="flex h-16 w-16 items-center justify-center rounded-xl bg-green-100 group-hover:bg-green-200 transition-colors mr-4">
@@ -333,14 +333,14 @@ export default function AboutPage() {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-secondary-900 group-hover:text-green-600 transition-colors">
-                    Emily Rodriguez
+                    Irina I.
                   </h3>
                   <p className="text-green-600 font-medium">Head of Local SEO</p>
                 </div>
               </div>
               <p className="text-secondary-600 mb-6">
                 Expert in local search optimization with proven strategies for businesses in competitive markets. 
-                Specializes in Google My Business and review management.
+                Specializes in Austin and Texas markets, Google My Business, and review management.
               </p>
               <div className="space-y-3 mb-6">
                 <div className="flex items-center justify-between">
@@ -350,14 +350,14 @@ export default function AboutPage() {
                   </Link>
                 </div>
                 <div className="flex items-center justify-between">
-                  <span className="text-sm text-secondary-600">Google My Business</span>
-                  <Link href="/services/google-my-business" className="text-green-600 hover:text-green-700 text-sm font-medium">
+                  <span className="text-sm text-secondary-600">Austin Market</span>
+                  <Link href="/austin-tx" className="text-green-600 hover:text-green-700 text-sm font-medium">
                     Learn More →
                   </Link>
                 </div>
                 <div className="flex items-center justify-between">
-                  <span className="text-sm text-secondary-600">Review Management</span>
-                  <Link href="/services/review-management" className="text-green-600 hover:text-green-700 text-sm font-medium">
+                  <span className="text-sm text-secondary-600">Google My Business</span>
+                  <Link href="/services/local-seo" className="text-green-600 hover:text-green-700 text-sm font-medium">
                     Learn More →
                   </Link>
                 </div>
@@ -367,7 +367,7 @@ export default function AboutPage() {
               </div>
             </div>
 
-            {/* David Kim - Web Development Services */}
+            {/* Mark S. - Web Development Services */}
             <div className="group bg-white rounded-2xl p-8 shadow-soft border border-gray-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
               <div className="flex items-center mb-6">
                 <div className="flex h-16 w-16 items-center justify-center rounded-xl bg-orange-100 group-hover:bg-orange-200 transition-colors mr-4">
@@ -375,14 +375,14 @@ export default function AboutPage() {
                 </div>
                 <div>
                   <h3 className="text-xl font-semibold text-secondary-900 group-hover:text-orange-600 transition-colors">
-                    David Kim
+                    Mark S.
                   </h3>
                   <p className="text-orange-600 font-medium">Lead Web Developer</p>
                 </div>
               </div>
               <p className="text-secondary-600 mb-6">
                 Creating conversion-focused websites that not only look great but drive real business results. 
-                Expert in performance optimization and user experience.
+                Expert in modern development practices, performance optimization, and user experience.
               </p>
               <div className="space-y-3 mb-6">
                 <div className="flex items-center justify-between">
@@ -419,7 +419,7 @@ export default function AboutPage() {
             Ready to Work with Our Team?
           </h2>
           <p className="text-xl text-primary-100 mb-8">
-            Join hundreds of businesses that have already transformed their digital presence 
+            Join over 100 businesses that have already transformed their digital presence 
             with our proven methodology and expert team.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

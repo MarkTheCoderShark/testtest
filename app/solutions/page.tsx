@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button'
-import { ArrowRight, TrendingUp, Globe, Code, Users, Star, Target, Zap, BarChart3, Building2 } from 'lucide-react'
+import { ArrowRight, TrendingUp, Globe, Code, Users, Star, Target, Zap, BarChart3, Building2, FileText, ShoppingBag } from 'lucide-react'
 import Link from 'next/link'
 import { Breadcrumb, generateBreadcrumbs } from '@/components/ui/breadcrumb'
 

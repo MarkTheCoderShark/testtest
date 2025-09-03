@@ -1,0 +1,49 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4C74B9;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#3A5A8A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2D4A73;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="100" cy="100" r="50" fill="white" opacity="0.1"/>
+  <circle cx="1100" cy="530" r="80" fill="white" opacity="0.05"/>
+  <circle cx="200" cy="500" r="30" fill="white" opacity="0.08"/>
+  
+  <!-- Main content area -->
+  <rect x="100" y="150" width="1000" height="330" rx="20" fill="white" opacity="0.95"/>
+  
+  <!-- Logo area -->
+  <g transform="translate(150, 200)">
+    <circle cx="30" cy="30" r="30" fill="#4C74B9"/>
+    <path d="M15 15 L30 45 L45 15" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M5 45 L12 25 L19 35 L26 25 L33 45" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <circle cx="30" cy="50" r="2" fill="white"/>
+  </g>
+  
+  <!-- Title -->
+  <text x="200" y="250" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#1F2937">
+    Web Vello
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="200" y="300" font-family="Arial, sans-serif" font-size="24" fill="#6B7280">
+    Professional Web Development & Digital Marketing
+  </text>
+  
+  <!-- CTA -->
+  <rect x="200" y="320" width="200" height="50" rx="25" fill="#4C74B9"/>
+  <text x="300" y="350" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white" text-anchor="middle">
+    Get Started Today
+  </text>
+  
+  <!-- URL -->
+  <text x="200" y="400" font-family="Arial, sans-serif" font-size="16" fill="#9CA3AF">
+    webvello.com
+  </text>
+</svg>

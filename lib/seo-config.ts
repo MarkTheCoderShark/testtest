@@ -19,9 +19,9 @@ export const defaultMetadata: Metadata = {
     'web design services',
     'marketing automation'
   ],
-  authors: [{ name: 'WebWagon', url: 'https://webwagon.com' }],
-  creator: 'WebWagon',
-  publisher: 'WebWagon',
+  authors: [{ name: 'Web Vello', url: 'https://webvello.com' }],
+  creator: 'Web Vello',
+  publisher: 'Web Vello',
   formatDetection: {
     email: false,
     address: false,
@@ -30,26 +30,26 @@ export const defaultMetadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://webwagon.com',
-    siteName: 'WebWagon',
-    title: 'WebWagon - Digital Marketing Agency',
+    url: 'https://webvello.com',
+    siteName: 'Web Vello',
+    title: 'Web Vello - Digital Marketing Agency',
     description: 'Drive revenue growth with data-driven digital marketing. Get 300%+ traffic growth in 6 months.',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'WebWagon - Digital Marketing Agency',
+        alt: 'Web Vello - Digital Marketing Agency',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'WebWagon - Digital Marketing Agency',
+    title: 'Web Vello - Digital Marketing Agency',
     description: 'Drive revenue growth with data-driven digital marketing',
     images: ['/og-image.jpg'],
-    creator: '@webwagon',
-    site: '@webwagon',
+    creator: '@webvello',
+    site: '@webvello',
   },
   robots: {
     index: true,
@@ -63,12 +63,12 @@ export const defaultMetadata: Metadata = {
     },
   },
   verification: {
-    google: 'your-google-verification-code',
-    yandex: 'your-yandex-verification-code',
-    yahoo: 'your-yahoo-verification-code',
+    google: 'REPLACE_WITH_GOOGLE_SEARCH_CONSOLE_VERIFICATION_CODE',
+    yandex: 'REPLACE_WITH_BING_WEBMASTER_VERIFICATION_CODE',
+    yahoo: 'REPLACE_WITH_YAHOO_VERIFICATION_CODE',
   },
   alternates: {
-    canonical: 'https://webwagon.com',
+    canonical: 'https://webvello.com',
   },
   category: 'Digital Marketing',
   classification: 'Business',
@@ -77,7 +77,7 @@ export const defaultMetadata: Metadata = {
     'msapplication-TileColor': '#4C74B9',
     'apple-mobile-web-app-capable': 'yes',
     'apple-mobile-web-app-status-bar-style': 'default',
-    'apple-mobile-web-app-title': 'WebWagon',
+    'apple-mobile-web-app-title': 'Web Vello',
   },
 }
 
@@ -99,25 +99,25 @@ export const serviceMetadata: Record<string, Metadata> = {
       'professional web design'
     ],
     openGraph: {
-      title: 'Custom Web Development Services | WebWagon',
+      title: 'Custom Web Development Services | Web Vello',
       description: 'Professional web development with modern technologies. Fast, mobile-optimized websites that convert visitors into customers.',
-      url: 'https://webwagon.com/services/web-development',
+      url: 'https://webvello.com/services/web-development',
       images: [
         {
           url: '/og-web-development.jpg',
           width: 1200,
           height: 630,
-          alt: 'Web Development Services - WebWagon',
+          alt: 'Web Development Services - Web Vello',
         },
       ],
     },
     twitter: {
-      title: 'Custom Web Development Services | WebWagon',
+      title: 'Custom Web Development Services | Web Vello',
       description: 'Professional web development with modern technologies. Fast, mobile-optimized websites.',
       images: ['/og-web-development.jpg'],
     },
     alternates: {
-      canonical: 'https://webwagon.com/services/web-development',
+      canonical: 'https://webvello.com/services/web-development',
     },
   },
   'wordpress-development': {
@@ -136,25 +136,25 @@ export const serviceMetadata: Record<string, Metadata> = {
       'WordPress consulting'
     ],
     openGraph: {
-      title: 'WordPress Development Services | WebWagon',
+      title: 'WordPress Development Services | Web Vello',
       description: 'Expert WordPress development including custom themes, plugins, and Elementor websites. Professional WordPress solutions for your business.',
-      url: 'https://webwagon.com/services/wordpress-development',
+      url: 'https://webvello.com/services/wordpress-development',
       images: [
         {
           url: '/og-wordpress-development.jpg',
           width: 1200,
           height: 630,
-          alt: 'WordPress Development Services - WebWagon',
+          alt: 'WordPress Development Services - Web Vello',
         },
       ],
     },
     twitter: {
-      title: 'WordPress Development Services | WebWagon',
+      title: 'WordPress Development Services | Web Vello',
       description: 'Expert WordPress development including custom themes, plugins, and Elementor websites.',
       images: ['/og-wordpress-development.jpg'],
     },
     alternates: {
-      canonical: 'https://webwagon.com/services/wordpress-development',
+      canonical: 'https://webvello.com/services/wordpress-development',
     },
   },
   'seo': {
@@ -175,13 +175,13 @@ export const serviceMetadata: Record<string, Metadata> = {
     openGraph: {
       title: 'SEO Services | AI-Powered Search Optimization',
       description: 'Professional SEO services with AI-powered strategies. Improve rankings and drive organic traffic with proven methods.',
-      url: 'https://webwagon.com/services/seo',
+      url: 'https://webvello.com/services/seo',
       images: [
         {
           url: '/og-seo-services.jpg',
           width: 1200,
           height: 630,
-          alt: 'SEO Services - WebWagon',
+          alt: 'SEO Services - Web Vello',
         },
       ],
     },
@@ -191,7 +191,7 @@ export const serviceMetadata: Record<string, Metadata> = {
       images: ['/og-seo-services.jpg'],
     },
     alternates: {
-      canonical: 'https://webwagon.com/services/seo',
+      canonical: 'https://webvello.com/services/seo',
     },
   },
   'ai-seo': {
@@ -212,13 +212,13 @@ export const serviceMetadata: Record<string, Metadata> = {
     openGraph: {
       title: 'AI SEO Services | Revolutionary Search Optimization',
       description: 'Revolutionary AI-powered SEO that analyzes millions of data points. Get 300%+ traffic growth in 6 months.',
-      url: 'https://webwagon.com/services/ai-seo',
+      url: 'https://webvello.com/services/ai-seo',
       images: [
         {
           url: '/og-ai-seo.jpg',
           width: 1200,
           height: 630,
-          alt: 'AI SEO Services - WebWagon',
+          alt: 'AI SEO Services - Web Vello',
         },
       ],
     },
@@ -228,7 +228,7 @@ export const serviceMetadata: Record<string, Metadata> = {
       images: ['/og-ai-seo.jpg'],
     },
     alternates: {
-      canonical: 'https://webwagon.com/services/ai-seo',
+      canonical: 'https://webvello.com/services/ai-seo',
     },
   },
   'local-seo': {
@@ -249,13 +249,13 @@ export const serviceMetadata: Record<string, Metadata> = {
     openGraph: {
       title: 'Local SEO Services | Dominate Local Search',
       description: 'Dominate local search results and drive foot traffic. Rank #1 in your local market with geo-targeted strategies.',
-      url: 'https://webwagon.com/services/local-seo',
+      url: 'https://webvello.com/services/local-seo',
       images: [
         {
           url: '/og-local-seo.jpg',
           width: 1200,
           height: 630,
-          alt: 'Local SEO Services - WebWagon',
+          alt: 'Local SEO Services - Web Vello',
         },
       ],
     },
@@ -265,7 +265,7 @@ export const serviceMetadata: Record<string, Metadata> = {
       images: ['/og-local-seo.jpg'],
     },
     alternates: {
-      canonical: 'https://webwagon.com/services/local-seo',
+      canonical: 'https://webvello.com/services/local-seo',
     },
   },
   'ui-ux-design': {
@@ -286,13 +286,13 @@ export const serviceMetadata: Record<string, Metadata> = {
     openGraph: {
       title: 'UI/UX Design Services | User-Centered Design',
       description: 'User-centered design that creates seamless experiences and drives engagement. Focus on conversion optimization.',
-      url: 'https://webwagon.com/services/ui-ux-design',
+      url: 'https://webvello.com/services/ui-ux-design',
       images: [
         {
           url: '/og-ui-ux-design.jpg',
           width: 1200,
           height: 630,
-          alt: 'UI/UX Design Services - WebWagon',
+          alt: 'UI/UX Design Services - Web Vello',
         },
       ],
     },
@@ -302,7 +302,7 @@ export const serviceMetadata: Record<string, Metadata> = {
       images: ['/og-ui-ux-design.jpg'],
     },
     alternates: {
-      canonical: 'https://webwagon.com/services/ui-ux-design',
+      canonical: 'https://webvello.com/services/ui-ux-design',
     },
   },
 }
@@ -310,37 +310,37 @@ export const serviceMetadata: Record<string, Metadata> = {
 // Page-specific metadata
 export const pageMetadata: Record<string, Metadata> = {
   'contact': {
-    title: 'Contact WebWagon | Get Your Free Digital Marketing Strategy',
-    description: 'Ready to grow your business? Contact WebWagon for a free digital marketing strategy session. Get expert advice on SEO, web development, and conversion optimization.',
+    title: 'Contact Web Vello | Get Your Free Digital Marketing Strategy',
+    description: 'Ready to grow your business? Contact Web Vello for a free digital marketing strategy session. Get expert advice on SEO, web development, and conversion optimization.',
     keywords: [
       'contact digital marketing agency',
       'free marketing consultation',
       'digital marketing strategy',
       'marketing consultation',
-      'contact WebWagon',
+      'contact Web Vello',
       'marketing advice',
       'business growth consultation'
     ],
     openGraph: {
-      title: 'Contact WebWagon | Free Digital Marketing Strategy',
+      title: 'Contact Web Vello | Free Digital Marketing Strategy',
       description: 'Get your free digital marketing strategy session. Expert advice on SEO, web development, and conversion optimization.',
-      url: 'https://webwagon.com/contact',
+      url: 'https://webvello.com/contact',
       images: [
         {
           url: '/og-contact.jpg',
           width: 1200,
           height: 630,
-          alt: 'Contact WebWagon - Free Marketing Strategy',
+          alt: 'Contact Web Vello - Free Marketing Strategy',
         },
       ],
     },
     twitter: {
-      title: 'Contact WebWagon | Free Digital Marketing Strategy',
+      title: 'Contact Web Vello | Free Digital Marketing Strategy',
       description: 'Get your free digital marketing strategy session. Expert advice on growth.',
       images: ['/og-contact.jpg'],
     },
     alternates: {
-      canonical: 'https://webwagon.com/contact',
+      canonical: 'https://webvello.com/contact',
     },
   },
   'pricing': {
@@ -358,13 +358,13 @@ export const pageMetadata: Record<string, Metadata> = {
     openGraph: {
       title: 'Digital Marketing Pricing | Transparent Plans',
       description: 'Transparent pricing for digital marketing services. Flexible plans for SEO, web development, and marketing.',
-      url: 'https://webwagon.com/pricing',
+      url: 'https://webvello.com/pricing',
       images: [
         {
           url: '/og-pricing.jpg',
           width: 1200,
           height: 630,
-          alt: 'Digital Marketing Pricing - WebWagon',
+          alt: 'Digital Marketing Pricing - Web Vello',
         },
       ],
     },
@@ -374,14 +374,14 @@ export const pageMetadata: Record<string, Metadata> = {
       images: ['/og-pricing.jpg'],
     },
     alternates: {
-      canonical: 'https://webwagon.com/pricing',
+      canonical: 'https://webvello.com/pricing',
     },
   },
   'about': {
-    title: 'About WebWagon | Digital Marketing Agency Story',
-    description: 'Learn about WebWagon\'s mission to drive business growth through data-driven digital marketing. Our team of experts delivers results with AI-powered strategies.',
+    title: 'About Web Vello | Digital Marketing Agency Story',
+    description: 'Learn about Web Vello\'s mission to drive business growth through data-driven digital marketing. Our team of experts delivers results with AI-powered strategies.',
     keywords: [
-      'about WebWagon',
+      'about Web Vello',
       'digital marketing agency story',
       'marketing team',
       'company mission',
@@ -390,25 +390,25 @@ export const pageMetadata: Record<string, Metadata> = {
       'marketing philosophy'
     ],
     openGraph: {
-      title: 'About WebWagon | Digital Marketing Agency',
-      description: 'Learn about WebWagon\'s mission to drive business growth through data-driven digital marketing.',
-      url: 'https://webwagon.com/about',
+      title: 'About Web Vello | Digital Marketing Agency',
+      description: 'Learn about Web Vello\'s mission to drive business growth through data-driven digital marketing.',
+      url: 'https://webvello.com/about',
       images: [
         {
           url: '/og-about.jpg',
           width: 1200,
           height: 630,
-          alt: 'About WebWagon - Digital Marketing Agency',
+          alt: 'About Web Vello - Digital Marketing Agency',
         },
       ],
     },
     twitter: {
-      title: 'About WebWagon | Digital Marketing Agency',
-      description: 'Learn about WebWagon\'s mission to drive business growth through digital marketing.',
+      title: 'About Web Vello | Digital Marketing Agency',
+      description: 'Learn about Web Vello\'s mission to drive business growth through digital marketing.',
       images: ['/og-about.jpg'],
     },
     alternates: {
-      canonical: 'https://webwagon.com/about',
+      canonical: 'https://webvello.com/about',
     },
   },
   'case-studies': {
@@ -426,13 +426,13 @@ export const pageMetadata: Record<string, Metadata> = {
     openGraph: {
       title: 'Digital Marketing Case Studies | Real Results',
       description: 'Explore our digital marketing case studies and success stories. See real results from our campaigns.',
-      url: 'https://webwagon.com/case-studies',
+      url: 'https://webvello.com/case-studies',
       images: [
         {
           url: '/og-case-studies.jpg',
           width: 1200,
           height: 630,
-          alt: 'Digital Marketing Case Studies - WebWagon',
+          alt: 'Digital Marketing Case Studies - Web Vello',
         },
       ],
     },
@@ -442,7 +442,7 @@ export const pageMetadata: Record<string, Metadata> = {
       images: ['/og-case-studies.jpg'],
     },
     alternates: {
-      canonical: 'https://webwagon.com/case-studies',
+      canonical: 'https://webvello.com/case-studies',
     },
   },
 }

@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
 import { Inter, Poppins } from 'next/font/google'
 import './globals.css'
-import { Header } from '@/components/layout/header'
-import { Footer } from '@/components/layout/footer'
+import { NewHeader as Header } from '../components/layout/new-header'
+import { Footer } from '../components/layout/footer'
+import { PerformanceMonitor } from '../components/analytics/performance-monitor'
 // import GoogleAnalytics from '@/components/analytics/google-analytics'
 
 const inter = Inter({ 
@@ -39,9 +40,9 @@ export const metadata: Metadata = {
     'web design services',
     'marketing automation'
   ],
-  authors: [{ name: 'WebWagon', url: 'https://webwagon.com' }],
-  creator: 'WebWagon',
-  publisher: 'WebWagon',
+  authors: [{ name: 'Web Vello', url: 'https://webvello.com' }],
+  creator: 'Web Vello',
+  publisher: 'Web Vello',
   formatDetection: {
     email: false,
     address: false,
@@ -50,26 +51,26 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://webwagon.com',
-    siteName: 'WebWagon',
-    title: 'WebWagon - Digital Marketing Agency',
+    url: 'https://webvello.com',
+    siteName: 'Web Vello',
+    title: 'Web Vello - Digital Marketing Agency',
     description: 'Drive revenue growth with data-driven digital marketing. Get 300%+ traffic growth in 6 months.',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'WebWagon - Digital Marketing Agency',
+        alt: 'Web Vello - Digital Marketing Agency',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'WebWagon - Digital Marketing Agency',
+    title: 'Web Vello - Digital Marketing Agency',
     description: 'Drive revenue growth with data-driven digital marketing',
     images: ['/og-image.jpg'],
-    creator: '@webwagon',
-    site: '@webwagon',
+    creator: '@webvello',
+    site: '@webvello',
   },
   robots: {
     index: true,
@@ -83,12 +84,12 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: 'your-google-verification-code',
-    yandex: 'your-yandex-verification-code',
-    yahoo: 'your-yahoo-verification-code',
+    google: 'REPLACE_WITH_GOOGLE_SEARCH_CONSOLE_VERIFICATION_CODE',
+    yandex: 'REPLACE_WITH_BING_WEBMASTER_VERIFICATION_CODE',
+    yahoo: 'REPLACE_WITH_YAHOO_VERIFICATION_CODE',
   },
   alternates: {
-    canonical: 'https://webwagon.com',
+    canonical: 'https://webvello.com',
   },
   category: 'Digital Marketing',
   classification: 'Business',
@@ -97,7 +98,7 @@ export const metadata: Metadata = {
     'msapplication-TileColor': '#4C74B9',
     'apple-mobile-web-app-capable': 'yes',
     'apple-mobile-web-app-status-bar-style': 'default',
-    'apple-mobile-web-app-title': 'WebWagon',
+    'apple-mobile-web-app-title': 'Web Vello',
   },
 }
 
@@ -119,8 +120,8 @@ export default function RootLayout({
         <meta name="msapplication-TileColor" content="#4C74B9" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-        <meta name="apple-mobile-web-app-title" content="WebWagon" />
-        <meta name="application-name" content="WebWagon" />
+        <meta name="apple-mobile-web-app-title" content="Web Vello" />
+        <meta name="application-name" content="Web Vello" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="msapplication-config" content="/browserconfig.xml" />
@@ -138,40 +139,70 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              "name": "WebWagon",
-              "url": "https://webwagon.com",
-              "logo": "https://webwagon.com/logo.png",
+              "name": "Web Vello",
+              "url": "https://webvello.com",
+              "logo": "https://webvello.com/logo.png",
               "description": "Digital Marketing Agency specializing in AI-powered SEO, local search optimization, and conversion-focused web development.",
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "123 Digital Drive",
-                "addressLocality": "Marketing District",
-                "addressRegion": "NY",
-                "postalCode": "10001",
+                "addressLocality": "United States",
                 "addressCountry": "US"
               },
               "contactPoint": {
                 "@type": "ContactPoint",
-                "telephone": "+1-555-123-4567",
                 "contactType": "customer service",
                 "areaServed": "US",
-                "availableLanguage": "English"
+                "availableLanguage": "English",
+                "url": "https://webvello.com/contact"
               },
               "sameAs": [
-                "https://twitter.com/webwagon",
-                "https://linkedin.com/company/webwagon",
-                "https://facebook.com/webwagon"
+                "https://twitter.com/webvello",
+                "https://linkedin.com/company/webvello",
+                "https://facebook.com/webvello"
               ],
-              "foundingDate": "2009",
-              "numberOfEmployees": "50+",
+              "foundingDate": "2024",
+              "numberOfEmployees": "10-50",
               "serviceArea": {
-                "@type": "GeoCircle",
-                "geoMidpoint": {
-                  "@type": "GeoCoordinates",
-                  "latitude": "40.7128",
-                  "longitude": "-74.0060"
-                },
-                "geoRadius": "50000"
+                "@type": "Country",
+                "name": "United States"
+              },
+              "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Digital Marketing Services",
+                "itemListElement": [
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "AI-Powered SEO Services",
+                      "description": "Artificial intelligence SEO strategies that analyze millions of data points for 300%+ traffic growth"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Local SEO Services",
+                      "description": "Geo-targeted local SEO strategies to dominate local search results and drive foot traffic"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Custom Web Development",
+                      "description": "Professional custom websites built with modern technologies for optimal performance and conversions"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "UI/UX Design Services",
+                      "description": "User-centered design that creates seamless experiences and drives engagement"
+                    }
+                  }
+                ]
               }
             })
           }}
@@ -179,6 +210,7 @@ export default function RootLayout({
       </head>
       <body className="antialiased bg-white">
         {/* <GoogleAnalytics /> */}
+        <PerformanceMonitor />
         <Header />
         <main>{children}</main>
         <Footer />
@@ -190,14 +222,59 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
-              "name": "WebWagon",
-              "url": "https://webwagon.com",
+              "name": "Web Vello",
+              "url": "https://webvello.com",
               "description": "Digital Marketing Agency - AI SEO, Local SEO, Web Development",
               "potentialAction": {
                 "@type": "SearchAction",
-                "target": "https://webwagon.com/search?q={search_term_string}",
+                "target": "https://webvello.com/search?q={search_term_string}",
                 "query-input": "required name=search_term_string"
               }
+            })
+          }}
+        />
+        
+        {/* FAQ Structured Data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "What is AI-powered SEO?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "AI-powered SEO uses artificial intelligence and machine learning to analyze millions of data points, identify ranking opportunities your competitors miss, and deliver 300%+ organic traffic growth in 6 months."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "How does local SEO help my business?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Local SEO helps your business dominate local search results, drive qualified foot traffic, and capture nearby customers searching for your services. We help you rank #1 in your local market."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What makes Web Vello different from other digital marketing agencies?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Web Vello combines cutting-edge AI technology with proven strategies to deliver measurable results. We specialize in AI-powered SEO, local search optimization, and custom web development with a focus on conversion optimization."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Do you offer custom web development services?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, we build professional custom websites that convert visitors into customers. Our sites are fast, mobile-optimized, SEO-friendly, and built with modern technologies for optimal performance."
+                  }
+                }
+              ]
             })
           }}
         />

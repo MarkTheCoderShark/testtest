@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button'
-import { ArrowRight, Brain, Zap, Target, TrendingUp, CheckCircle, Users, BarChart3, Rocket, Globe, Cpu, Network } from 'lucide-react'
+import { ArrowRight, Brain, Zap, Target, TrendingUp, CheckCircle, Users, BarChart3, Rocket, Globe, Cpu, Network, Code, FileText, ShoppingBag } from 'lucide-react'
 import Link from 'next/link'
 
 const services = [

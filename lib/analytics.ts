@@ -1,4 +1,4 @@
-// Analytics Configuration for WebWagon
+// Analytics Configuration for Web Vello
 export const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_ID || 'G-XXXXXXXXXX'
 
 // Conversion Goals Configuration

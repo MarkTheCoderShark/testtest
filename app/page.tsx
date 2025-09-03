@@ -7,65 +7,65 @@ import { SocialProof } from '../components/sections/social-proof'
 import { Button } from '../components/ui/button'
 import { ArrowRight, CheckCircle, Zap, Globe, Code, BarChart3, Users, Award, Sparkles, Target, TrendingUp, Play, DollarSign, BarChart, Rocket, Target as TargetIcon, Star } from 'lucide-react'
 import Link from 'next/link'
-// import { useConversionTracking } from '@/hooks/useConversionTracking'
-// import ScrollTracker from '@/components/analytics/scroll-tracker'
+// import { useConversionTracking } from '../hooks/useConversionTracking'
+// import ScrollTracker from '../components/analytics/scroll-tracker'
 
 const services = [
   {
-    name: "AI-Powered SEO",
-    description: "Revolutionize your search rankings with AI that analyzes millions of data points to identify opportunities your competitors miss. Get 300%+ traffic growth in 6 months.",
+    name: "AI-Powered SEO Services",
+    description: "Revolutionize your search rankings with artificial intelligence SEO that analyzes millions of data points to identify opportunities your competitors miss. Get 300%+ organic traffic growth in 6 months with our advanced AI SEO strategies.",
     icon: Zap,
     href: "/services/ai-seo",
-    features: ["AI keyword research", "Content optimization", "Performance tracking", "Competitive analysis"],
+    features: ["AI keyword research and analysis", "Machine learning content optimization", "Automated performance tracking", "Competitive intelligence analysis"],
     gradient: "from-purple-500 to-indigo-600"
   },
   {
-    name: "Local/GEO SEO",
-    description: "Dominate local search results and drive foot traffic to your business. Our geo-targeted strategies help you rank #1 in your local market and capture nearby customers.",
+    name: "Local SEO & Geo-Targeting",
+    description: "Dominate local search results and drive qualified foot traffic to your business. Our geo-targeted local SEO strategies help you rank #1 in your local market and capture nearby customers searching for your services.",
     icon: Globe,
     href: "/services/local-seo",
-    features: ["Local keyword optimization", "Google My Business", "Local citations", "Review management"],
+    features: ["Local keyword optimization", "Google My Business management", "Local citation building", "Online review management"],
     gradient: "from-blue-500 to-cyan-600"
   },
   {
-    name: "Web Development",
-    description: "Custom websites that convert visitors into customers. We build fast, mobile-optimized sites with conversion-focused design that drives results.",
+    name: "Custom Web Development",
+    description: "Professional custom websites that convert visitors into customers. We build fast, mobile-optimized, SEO-friendly sites with conversion-focused design that drives measurable business results.",
     icon: Code,
     href: "/services/web-development",
-    features: ["Custom design", "Mobile optimization", "SEO integration", "Performance optimization"],
+    features: ["Custom responsive design", "Mobile-first optimization", "Built-in SEO integration", "Performance optimization"],
     gradient: "from-orange-500 to-red-600"
   },
   {
-    name: "UI/UX Design",
-    description: "User-centered design that creates seamless experiences and drives engagement. Our designs focus on conversion optimization and user satisfaction.",
+    name: "UI/UX Design Services",
+    description: "User-centered design that creates seamless digital experiences and drives engagement. Our conversion-focused UI/UX designs prioritize user satisfaction and business growth.",
     icon: BarChart3,
     href: "/services/ui-ux-design",
-    features: ["User research", "Wireframing", "Prototyping", "Usability testing"],
+    features: ["User research and testing", "Wireframing and prototyping", "Usability optimization", "Conversion rate optimization"],
     gradient: "from-green-500 to-emerald-600"
   },
   {
-    name: "Traditional SEO",
-    description: "Proven SEO strategies that stand the test of time. We use data-driven approaches to improve rankings and drive sustainable organic traffic growth.",
+    name: "Traditional SEO Services",
+    description: "Proven search engine optimization strategies that stand the test of time. We use data-driven SEO approaches to improve rankings and drive sustainable organic traffic growth for long-term success.",
     icon: Target,
     href: "/services/seo",
-    features: ["Technical SEO", "On-page optimization", "Link building", "Content strategy"],
+    features: ["Technical SEO audits", "On-page optimization", "Link building campaigns", "Content marketing strategy"],
     gradient: "from-teal-500 to-blue-600"
   },
   {
-    name: "Software Development",
-    description: "Custom software solutions that streamline operations and create competitive advantages. We build scalable applications that grow with your business.",
+    name: "Custom Software Development",
+    description: "Professional custom software solutions that streamline operations and create competitive advantages. We build scalable web applications and software that grows with your business needs.",
     icon: Code,
     href: "/services/software-development",
-    features: ["Custom applications", "API development", "Database design", "Cloud deployment"],
+    features: ["Custom web applications", "API development and integration", "Database design and optimization", "Cloud deployment and scaling"],
     gradient: "from-indigo-500 to-purple-600"
   }
 ]
 
 const stats = [
-  { id: 1, name: "Revenue Generated", value: "$2.4B+", icon: TrendingUp },
-  { id: 2, name: "Happy Clients", value: "500+", icon: Users },
-  { id: 3, name: "ROI Average", value: "1,200%", icon: Award },
-  { id: 4, name: "Traffic Growth", value: "300%+", icon: BarChart3 }
+  { id: 1, name: "Revenue Generated for Clients", value: "$2.4B+", icon: TrendingUp },
+  { id: 2, name: "Satisfied Business Clients", value: "500+", icon: Users },
+  { id: 3, name: "Average ROI Delivered", value: "1,200%", icon: Award },
+  { id: 4, name: "Organic Traffic Growth", value: "300%+", icon: BarChart3 }
 ]
 
 const testimonials = [
@@ -73,7 +73,7 @@ const testimonials = [
     id: 1,
     name: "Sarah Mitchell",
     role: "CEO, TechStart Solutions",
-    content: "Web Vello transformed our online presence completely. We went from 50 leads per month to over 200, and our revenue increased by 150% in just 6 months.",
+    content: "Web Vello's digital marketing services transformed our online presence completely. We went from 50 qualified leads per month to over 200, and our revenue increased by 150% in just 6 months with their SEO and web development expertise.",
     rating: 5,
     company: "TechStart Solutions"
   },
@@ -81,7 +81,7 @@ const testimonials = [
     id: 2,
     name: "Michael Rodriguez",
     role: "Marketing Director, GrowthCo",
-    content: "The AI-powered SEO strategies are incredible. We're ranking for keywords we never thought possible, and our organic traffic has grown 400% year-over-year.",
+    content: "The AI-powered SEO strategies are incredible. We're ranking for high-value keywords we never thought possible, and our organic search traffic has grown 400% year-over-year with their advanced SEO techniques.",
     rating: 5,
     company: "GrowthCo"
   },
@@ -89,7 +89,7 @@ const testimonials = [
     id: 3,
     name: "Jennifer Chen",
     role: "Founder, LegalTech Pro",
-    content: "Professional, results-driven, and incredibly effective. Web Vello helped us establish authority in our niche and attract high-value clients consistently.",
+    content: "Professional, results-driven, and incredibly effective digital marketing agency. Web Vello helped us establish authority in our legal tech niche and attract high-value clients consistently through their SEO and web development services.",
     rating: 5,
     company: "LegalTech Pro"
   }
@@ -120,6 +120,94 @@ export default function HomePage() {
       {/* Social Proof Section */}
       <SocialProof />
       
+      {/* SEO-Optimized Content Section */}
+      <section className="py-24 bg-white">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <h2 className="text-4xl lg:text-5xl font-bold text-secondary-900 mb-6">
+                Why Choose Web Vello for Your 
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-500 to-primary-600"> Digital Marketing Needs?</span>
+              </h2>
+              <p className="text-xl text-secondary-600 mb-8">
+                As a leading digital marketing agency, Web Vello specializes in AI-powered SEO, local search optimization, and custom web development. Our data-driven approach delivers measurable results for businesses across all industries.
+              </p>
+              
+              <div className="space-y-6">
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-primary-500 to-primary-600 rounded-full flex items-center justify-center">
+                    <CheckCircle className="w-5 h-5 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-secondary-900 mb-2">AI-Powered SEO Services</h3>
+                    <p className="text-secondary-600">Our artificial intelligence SEO strategies analyze millions of data points to identify opportunities your competitors miss, delivering 300%+ organic traffic growth.</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-primary-500 to-primary-600 rounded-full flex items-center justify-center">
+                    <CheckCircle className="w-5 h-5 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-secondary-900 mb-2">Local SEO & Geo-Targeting</h3>
+                    <p className="text-secondary-600">Dominate local search results with our geo-targeted strategies. We help businesses rank #1 in their local market and capture nearby customers.</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4">
+                  <div className="flex-shrink-0 w-8 h-8 bg-gradient-to-r from-primary-500 to-primary-600 rounded-full flex items-center justify-center">
+                    <CheckCircle className="w-5 h-5 text-white" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-secondary-900 mb-2">Custom Web Development</h3>
+                    <p className="text-secondary-600">Professional custom websites built with modern technologies. Fast, mobile-optimized, and SEO-friendly sites that convert visitors into customers.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div className="bg-gradient-to-br from-primary-50 to-accent-50 rounded-2xl p-8">
+              <h3 className="text-2xl font-bold text-secondary-900 mb-6">Our Digital Marketing Expertise</h3>
+              <div className="space-y-4">
+                <div className="flex justify-between items-center">
+                  <span className="text-secondary-700">Search Engine Optimization (SEO)</span>
+                  <span className="text-primary-600 font-semibold">Expert</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-secondary-700">Local SEO Services</span>
+                  <span className="text-primary-600 font-semibold">Expert</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-secondary-700">Web Development</span>
+                  <span className="text-primary-600 font-semibold">Expert</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-secondary-700">UI/UX Design</span>
+                  <span className="text-primary-600 font-semibold">Expert</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-secondary-700">Conversion Rate Optimization</span>
+                  <span className="text-primary-600 font-semibold">Expert</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-secondary-700">Digital Marketing Strategy</span>
+                  <span className="text-primary-600 font-semibold">Expert</span>
+                </div>
+              </div>
+              
+              <div className="mt-8 p-6 bg-white rounded-xl shadow-sm">
+                <h4 className="text-lg font-semibold text-secondary-900 mb-3">Ready to Grow Your Business?</h4>
+                <p className="text-secondary-600 mb-4">Get a free digital marketing strategy consultation and discover how our SEO and web development services can transform your online presence.</p>
+                <Link href="/contact" className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-primary-500 to-primary-600 text-white font-semibold rounded-lg hover:from-primary-600 hover:to-primary-700 transition-all duration-200 shadow-lg hover:shadow-xl">
+                  Get Free Strategy Session
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Services Section */}
       <section className="py-24 bg-gradient-to-br from-gray-50 via-white to-blue-50/30 relative overflow-hidden">
         {/* Background decorative elements */}
@@ -355,7 +443,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* WebFX-Inspired CTA Section */}
+      {/* CTA Section */}
       <section className="py-24 bg-gradient-to-br from-primary-800 via-primary-900 to-secondary-900 relative overflow-hidden">
         {/* Background gradient flow */}
         <div className="absolute inset-0">
@@ -454,7 +542,7 @@ export default function HomePage() {
                     
                     <div className="relative z-10">
                       <div className="text-2xl font-bold text-primary-600 mb-1">Web</div>
-                      <div className="text-2xl font-bold text-secondary-600">Wagon</div>
+                      <div className="text-2xl font-bold text-secondary-600">Vello</div>
                       <div className="text-xs text-gray-500 mt-1">AI-Powered</div>
                     </div>
                   </div>
@@ -491,11 +579,11 @@ export default function HomePage() {
                 </div>
               </div>
 
-              {/* Value Achievement Badge */}
+              {/* Success Indicator */}
               <div className="absolute bottom-20 left-1/2 -translate-x-1/2">
-                <div className="bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg animate-pulse">
-                  <DollarSign className="w-4 h-4 inline mr-2" />
-                  $2.4B+ Value Delivered
+                <div className="bg-gradient-to-r from-green-400 to-emerald-500 text-white px-6 py-3 rounded-full text-sm font-semibold shadow-lg animate-pulse">
+                  <CheckCircle className="w-4 h-4 inline mr-2" />
+                  Proven Results
                 </div>
               </div>
 

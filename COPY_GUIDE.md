@@ -1,8 +1,8 @@
-# WebWagon Copy Guide
+# Web Vello Copy Guide
 
 ## 🎯 **Conversion-Focused Copy Strategy**
 
-This document outlines the enhanced, persuasive copy implemented across the WebWagon website to maximize conversions and drive business growth.
+This document outlines the enhanced, persuasive copy implemented across the Web Vello website to maximize conversions and drive business growth.
 
 ## 🏠 **Homepage Copy Enhancements**
 
@@ -79,7 +79,7 @@ This document outlines the enhanced, persuasive copy implemented across the WebW
 
 ### **Testimonials Section**
 **Enhanced Description**:
-> "Don't just take our word for it. Here's what business owners across the country have to say about working with WebWagon. These aren't just testimonials—they're success stories from real businesses that have transformed their digital presence."
+> "Don't just take our word for it. Here's what business owners across the country have to say about working with Web Vello. These aren't just testimonials—they're success stories from real businesses that have transformed their digital presence."
 
 **Key Improvements**:
 - Elevated testimonials to "success stories"
@@ -88,7 +88,7 @@ This document outlines the enhanced, persuasive copy implemented across the WebW
 
 ### **Final CTA Section**
 **Enhanced Description**:
-> "Join hundreds of businesses that have already transformed their online presence and achieved remarkable growth with WebWagon. Your competitors are already online—don't let them capture your market share."
+> "Join hundreds of businesses that have already transformed their online presence and achieved remarkable growth with Web Vello. Your competitors are already online—don't let them capture your market share."
 
 **Key Improvements**:
 - Added competitive urgency
@@ -240,4 +240,4 @@ This document outlines the enhanced, persuasive copy implemented across the WebW
 
 ---
 
-This copy strategy transforms WebWagon from a service provider to a results-guaranteeing business partner that businesses can't afford to ignore.
+This copy strategy transforms Web Vello from a service provider to a results-guaranteeing business partner that businesses can't afford to ignore.

@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button'
-import { ArrowRight, Code, Database, Cloud, Shield, Zap, Users, BarChart3 } from 'lucide-react'
+import { ArrowRight, Code, Database, Cloud, Shield, Zap, Users, BarChart3, FileText, ShoppingBag } from 'lucide-react'
 import Link from 'next/link'
 
 const features = [

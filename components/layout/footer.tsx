@@ -55,13 +55,13 @@ export function Footer() {
               dominate their markets.
             </p>
             <div className="flex space-x-4">
-              <a href="mailto:info@webwagon.com" className="text-gray-300 hover:text-white transition-colors">
+              <a href="mailto:info@webvello.com" className="text-gray-300 hover:text-white transition-colors">
                 <Mail className="h-5 w-5" />
               </a>
-              <a href="tel:+1234567890" className="text-gray-300 hover:text-white transition-colors">
+              <a href="tel:+17378885723" className="text-gray-300 hover:text-white transition-colors">
                 <Phone className="h-5 w-5" />
               </a>
-              <a href="https://webwagon.com" className="text-gray-300 hover:text-white transition-colors">
+              <a href="https://webvello.com" className="text-gray-300 hover:text-white transition-colors">
                 <Globe className="h-5 w-5" />
               </a>
             </div>
@@ -102,8 +102,9 @@ export function Footer() {
           {/* Locations */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Serving</h4>
-            <div className="grid grid-cols-2 gap-x-4 gap-y-2">
-              {cities.map((city) => (
+            <div className="space-y-2">
+              {/* Show only key locations */}
+              {cities.slice(0, 6).map((city) => (
                 <Link 
                   key={city.slug}
                   href={`/${city.slug}`} 
@@ -114,10 +115,17 @@ export function Footer() {
                 </Link>
               ))}
             </div>
-            <div className="mt-4">
-              <Link href="/contact" className="text-primary-400 hover:text-primary-300 transition-colors text-sm">
-                Other cities? Contact us →
+            <div className="mt-4 space-y-2">
+              <Link 
+                href="/locations" 
+                className="inline-flex items-center text-primary-400 hover:text-primary-300 transition-colors text-sm font-medium"
+              >
+                <MapPin className="h-4 w-4 mr-2" />
+                View All {cities.length}+ Locations →
               </Link>
+              <div className="text-gray-400 text-xs">
+                Nationwide coverage available
+              </div>
             </div>
           </div>
         </div>

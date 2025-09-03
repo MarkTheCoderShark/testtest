@@ -2,21 +2,14 @@ import { Star, Quote, Award, Users, TrendingUp, CheckCircle } from 'lucide-react
 import { Button } from '../ui/button'
 import Link from 'next/link'
 
-const clientLogos = [
-  { name: 'TechStart Solutions', industry: 'Technology' },
-  { name: 'GrowthCo', industry: 'Marketing' },
-  { name: 'LegalTech Pro', industry: 'Legal Services' },
-  { name: 'HealthFlow', industry: 'Healthcare' },
-  { name: 'EcoRetail', industry: 'E-commerce' },
-  { name: 'FinServ Plus', industry: 'Financial Services' },
-]
+
 
 const testimonials = [
   {
     name: 'Sarah Mitchell',
     role: 'CEO',
     company: 'TechStart Solutions',
-    content: 'Digital Wagon transformed our online presence completely. We went from 50 leads per month to over 200, and our revenue increased by 150% in just 6 months.',
+    content: 'Web Vello transformed our online presence completely. We went from 50 leads per month to over 200, and our revenue increased by 150% in just 6 months.',
     rating: 5,
     results: ['150% revenue increase', '300% more leads', '6 month timeline']
   },
@@ -32,7 +25,7 @@ const testimonials = [
     name: 'Jennifer Chen',
     role: 'Founder',
     company: 'LegalTech Pro',
-    content: 'Professional, results-driven, and incredibly effective. Digital Wagon helped us establish authority in our niche and attract high-value clients consistently.',
+    content: 'Professional, results-driven, and incredibly effective. Web Vello helped us establish authority in our niche and attract high-value clients consistently.',
     rating: 5,
     results: ['Authority established', 'High-value clients', 'Consistent results']
   }
@@ -46,10 +39,10 @@ const stats = [
 ]
 
 const awards = [
-  { name: 'Top Digital Agency 2024', issuer: 'Digital Marketing Institute' },
-  { name: 'Excellence in SEO', issuer: 'Search Engine Journal' },
-  { name: 'Best Conversion Rate', issuer: 'ConversionXL' },
-  { name: 'AI Innovation Award', issuer: 'TechCrunch' }
+  { name: 'Media Innovator Award 2020', issuer: 'Corporate Vision Magazine' },
+  { name: 'Best International Web Development Agency', issuer: 'Corporate Vision Magazine' },
+  { name: 'West Coast USA Excellence Award', issuer: 'Corporate Vision Magazine' },
+  { name: 'Client Satisfaction Excellence', issuer: 'Industry Recognition' }
 ]
 
 export function SocialProof() {
@@ -85,29 +78,7 @@ export function SocialProof() {
           ))}
         </div>
 
-        {/* Client Logos */}
-        <div className="mb-20">
-          <h3 className="text-xl font-semibold text-secondary-900 text-center mb-8">
-            Trusted by Industry Leaders
-          </h3>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
-            {clientLogos.map((client, index) => (
-              <div key={index} className="text-center group">
-                <div className="w-20 h-20 bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl flex items-center justify-center mx-auto mb-3 group-hover:shadow-soft transition-all duration-200">
-                  <div className="text-lg font-bold text-gray-600">
-                    {client.name.split(' ').map(word => word[0]).join('')}
-                  </div>
-                </div>
-                <p className="text-sm font-medium text-secondary-900 mb-1">
-                  {client.name}
-                </p>
-                <p className="text-xs text-secondary-500">
-                  {client.industry}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
+
 
         {/* Testimonials */}
         <div className="mb-20">

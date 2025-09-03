@@ -12,28 +12,28 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    value: "+1 (555) 123-4567",
+    value: "737-888-5723",
     description: "Call us for immediate assistance",
-    href: "tel:+15551234567"
+    href: "tel:+17378885723"
   },
   {
     icon: Mail,
     title: "Email",
-    value: "hello@webwagon.com",
+    value: "hello@webvello.com",
     description: "Send us an email anytime",
-    href: "mailto:hello@webwagon.com"
+    href: "mailto:hello@webvello.com"
   },
   {
     icon: MapPin,
     title: "Office",
-    value: "123 Digital Drive, Marketing District, NY 10001",
-    description: "Visit our headquarters",
-    href: "https://maps.google.com/?q=123+Digital+Drive,+Marketing+District,+NY+10001"
+    value: "Austin, Texas",
+    description: "Serving businesses nationwide",
+    href: "https://maps.google.com/?q=Austin,+Texas"
   },
   {
     icon: Clock,
     title: "Hours",
-    value: "Mon-Fri: 9AM-6PM EST",
+    value: "Mon-Fri: 9AM-6PM CST",
     description: "We're here to help during business hours",
     href: null
   }
@@ -170,10 +170,7 @@ export function ContactPageClient() {
       {/* Breadcrumb */}
       <div className="bg-gray-50 py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <Breadcrumb items={generateBreadcrumbs([
-            { label: 'Home', href: '/' },
-            { label: 'Contact', href: '/contact' }
-          ])} />
+          <Breadcrumb items={generateBreadcrumbs('page', { title: 'Contact' })} />
         </div>
       </div>
 
@@ -203,7 +200,7 @@ export function ContactPageClient() {
                 className="border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-4 text-lg"
               >
                 <Phone className="mr-2 h-5 w-5" />
-                Call (555) 123-4567
+                Call 737-888-5723
               </Button>
             </div>
           </div>
@@ -569,7 +566,7 @@ export function ContactPageClient() {
               className="border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 text-lg"
             >
               <Phone className="mr-2 h-5 w-5" />
-              Call (555) 123-4567
+              Call 737-888-5723
             </Button>
           </div>
         </div>

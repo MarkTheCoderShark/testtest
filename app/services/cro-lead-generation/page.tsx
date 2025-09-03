@@ -5,7 +5,7 @@ import {
   PieChart, DollarSign, Eye, MousePointer, Filter, Search, Heart, 
   Truck, CreditCard, Lock, RefreshCw, TrendingDown, AlertTriangle, 
   Lightbulb, Rocket, Calculator, Calendar, UserCheck, MessageSquare, 
-  Phone, Mail, MapPin, FileText, UserPlus 
+  Phone, Mail, MapPin, FileText, UserPlus, Code, ShoppingBag 
 } from 'lucide-react'
 import Link from 'next/link'
 

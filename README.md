@@ -1,10 +1,10 @@
-# WebWagon - Digital Marketing Agency Website
+# Web Vello - Digital Marketing Agency Website
 
-A modern, conversion-focused website built with Next.js 14, TypeScript, and Tailwind CSS, featuring a WebFX-inspired design system and comprehensive digital marketing service offerings.
+A modern, conversion-focused website built with Next.js 14, TypeScript, and Tailwind CSS, featuring a professional design system and comprehensive digital marketing service offerings.
 
 ## 🎨 Design System
 
-### Color Palette (WebFX-Inspired)
+### Color Palette
 - **Primary Colors**: 
   - Congress Blue `#004085` (primary-600)
   - Steel Blue `#4C74B9` (primary-500)
@@ -69,7 +69,7 @@ A modern, conversion-focused website built with Next.js 14, TypeScript, and Tail
 1. **Clone the repository**
    ```bash
    git clone <repository-url>
-   cd webfx-inspired-website
+   cd web-vello-website
    ```
 
 2. **Install dependencies**
@@ -219,7 +219,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 🙏 Acknowledgments
 
-- **WebFX**: Inspiration for the color palette and design aesthetic
+- **Modern Design**: Professional color palette and design aesthetic
 - **Tailwind CSS**: Utility-first CSS framework
 - **Next.js Team**: React framework and App Router
 - **shadcn/ui**: Component design patterns and inspiration

@@ -7,11 +7,7 @@ import { GA_TRACKING_ID } from '@/lib/analytics'
 
 declare global {
   interface Window {
-    gtag: (
-      command: 'config' | 'event' | 'set',
-      targetId: string,
-      config?: Record<string, any>
-    ) => void
+    gtag?: (...args: any[]) => void
   }
 }
 

@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button'
-import { ArrowRight, MessageSquare, Brain, Target, TrendingUp, CheckCircle, Eye, BarChart3, Zap, Users, Shield, Cpu } from 'lucide-react'
+import { ArrowRight, MessageSquare, Brain, Target, TrendingUp, CheckCircle, Eye, BarChart3, Zap, Users, Shield, Cpu, Code, FileText, ShoppingBag } from 'lucide-react'
 import Link from 'next/link'
 import { cn } from '../../../lib/utils'
 

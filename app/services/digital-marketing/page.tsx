@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button'
-import { ArrowRight, BarChart3, Target, Users, TrendingUp, Mail, Globe, Zap } from 'lucide-react'
+import { ArrowRight, BarChart3, Target, Users, TrendingUp, Mail, Globe, Zap, Code, FileText, ShoppingBag } from 'lucide-react'
 import Link from 'next/link'
 
 export default function DigitalMarketingPage() {

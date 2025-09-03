@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button'
-import { ArrowRight, BookOpen, Video, FileText, Download, Calendar, User, Tag } from 'lucide-react'
+import { ArrowRight, BookOpen, Video, FileText, Download, Calendar, User, Tag, Code } from 'lucide-react'
 import Link from 'next/link'
 import { Breadcrumb, generateBreadcrumbs } from '@/components/ui/breadcrumb'
 

@@ -1,4 +1,4 @@
-// Analytics Configuration for WebWagon
+// Analytics Configuration for Web Vello
 // Copy this file to your project and update with your actual values
 
 export const ANALYTICS_CONFIG = {
@@ -27,8 +27,8 @@ export const ANALYTICS_CONFIG = {
   
   // Tracking Domains
   TRACKING_DOMAINS: [
-    'webwagon.com',
-    'www.webwagon.com',
+    'webvello.com',
+    'www.webvello.com',
     'localhost:3000', // For development
   ],
   

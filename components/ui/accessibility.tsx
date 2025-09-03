@@ -1,5 +1,5 @@
 import { ReactNode } from 'react'
-import { cn } from '@/lib/utils'
+import { cn } from "../../lib/utils"
 
 // Skip to main content link for keyboard users
 export function SkipToMainContent() {
