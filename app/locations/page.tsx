@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
 import { MapPin, ArrowLeft, Globe, Users, TrendingUp } from 'lucide-react'
-import { Button } from '@/components/ui/button'
+import { Button } from '../../components/ui/button'
 
 export const metadata: Metadata = {
   title: 'Service Locations | Web Vello Digital Marketing',

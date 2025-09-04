@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from 'react'
-import { Button } from '@/components/ui/button'
+import { Button } from '../../../components/ui/button'
 import { ArrowRight, Monitor, Palette, Zap, Users, ShoppingCart, Mail, CheckCircle, Eye, Target, TrendingUp, Award, Clock, DollarSign, Globe, Smartphone, Search, Shield, BarChart3, Star, MessageSquare, Phone, Calendar, Play, Pause, RotateCcw, Sparkles, Layers, Code, Rocket, Crown, Gem, FileText, ShoppingBag } from 'lucide-react'
 import Link from 'next/link'
 

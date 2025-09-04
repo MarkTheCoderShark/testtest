@@ -1,7 +1,7 @@
-import { Button } from '@/components/ui/button'
+import { Button } from '../../components/ui/button'
 import { ArrowRight, Building2, Utensils, Heart, Scale, Car, ShoppingBag, Briefcase, Home, Users } from 'lucide-react'
 import Link from 'next/link'
-import { Breadcrumb, generateBreadcrumbs } from '@/components/ui/breadcrumb'
+import { Breadcrumb, generateBreadcrumbs } from '../../components/ui/breadcrumb'
 
 const industries = [
   {

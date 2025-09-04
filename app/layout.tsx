@@ -4,7 +4,7 @@ import './globals.css'
 import { NewHeader as Header } from '../components/layout/new-header'
 import { Footer } from '../components/layout/footer'
 import { PerformanceMonitor } from '../components/analytics/performance-monitor'
-// import GoogleAnalytics from '@/components/analytics/google-analytics'
+// import GoogleAnalytics from '../components/analytics/google-analytics'
 
 const inter = Inter({ 
   subsets: ['latin'],

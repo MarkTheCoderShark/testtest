@@ -1,5 +1,5 @@
-import { Pricing } from '@/components/sections/pricing'
-import { Breadcrumb, generateBreadcrumbs } from '@/components/ui/breadcrumb'
+import { Pricing } from '../../components/sections/pricing'
+import { Breadcrumb, generateBreadcrumbs } from '../../components/ui/breadcrumb'
 
 export default function PricingPage() {
   return (

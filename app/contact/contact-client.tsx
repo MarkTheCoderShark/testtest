@@ -1,12 +1,12 @@
 'use client'
 
 import { useState } from "react"
-import { Button } from '@/components/ui/button'
+import { Button } from '../../components/ui/button'
 import { Phone, Mail, MapPin, Clock, MessageSquare, Users, Zap, CheckCircle, AlertCircle, Star, TrendingUp, Award, Shield, Globe, Calendar, ArrowRight } from 'lucide-react'
-import { Breadcrumb, generateBreadcrumbs } from '@/components/ui/breadcrumb'
+import { Breadcrumb, generateBreadcrumbs } from '../../components/ui/breadcrumb'
 import Link from 'next/link'
 // import { useConversionTracking } from '@/hooks/useConversionTracking'
-// import ScrollTracker from '@/components/analytics/scroll-tracker'
+// import ScrollTracker from '../../components/analytics/scroll-tracker'
 
 const contactInfo = [
   {

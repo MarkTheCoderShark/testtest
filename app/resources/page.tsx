@@ -1,7 +1,7 @@
-import { Button } from '@/components/ui/button'
+import { Button } from '../../components/ui/button'
 import { ArrowRight, BookOpen, Video, FileText, Download, Calendar, User, Tag, Code } from 'lucide-react'
 import Link from 'next/link'
-import { Breadcrumb, generateBreadcrumbs } from '@/components/ui/breadcrumb'
+import { Breadcrumb, generateBreadcrumbs } from '../../components/ui/breadcrumb'
 
 const resources = [
   {

@@ -1,12 +1,12 @@
 "use client"
 
 import { useState } from 'react'
-import { EnhancedHero } from '@/components/sections/enhanced-hero'
-import { EnhancedPricing } from '@/components/sections/enhanced-pricing'
-import { EnhancedButton } from '@/components/ui/enhanced-button'
-import { EnhancedCard } from '@/components/ui/enhanced-card'
-import { AnimatedProgress } from '@/components/ui/animated-progress'
-import { InteractiveTestimonial } from '@/components/ui/interactive-testimonial'
+import { EnhancedHero } from '../../components/sections/enhanced-hero'
+import { EnhancedPricing } from '../../components/sections/enhanced-pricing'
+import { EnhancedButton } from '../../components/ui/enhanced-button'
+import { EnhancedCard } from '../../components/ui/enhanced-card'
+import { AnimatedProgress } from '../../components/ui/animated-progress'
+import { InteractiveTestimonial } from '../../components/ui/interactive-testimonial'
 import { ArrowRight, Star, Zap, Users, Award, CheckCircle, TrendingUp, Heart, Share2 } from 'lucide-react'
 
 const demoTestimonials = [

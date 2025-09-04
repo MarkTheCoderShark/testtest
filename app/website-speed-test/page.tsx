@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
-import { WebsiteSpeedTest } from '@/components/tools/website-speed-test'
-import { SpeedTestBenefits } from '@/components/tools/speed-test-benefits'
-import { SpeedTestExamples } from '@/components/tools/speed-test-examples'
+import { WebsiteSpeedTest } from '../../components/tools/website-speed-test'
+import { SpeedTestBenefits } from '../../components/tools/speed-test-benefits'
+import { SpeedTestExamples } from '../../components/tools/speed-test-examples'
 
 export const metadata: Metadata = {
   title: 'Free Website Speed Checker - Test Your Site Performance | Web Vello',

@@ -1,4 +1,4 @@
-import { Button } from '@/components/ui/button'
+import { Button } from '../../../components/ui/button'
 import { ArrowRight, ShoppingCart, CreditCard, TrendingUp, CheckCircle, Eye, Target, BarChart3, Zap, Users, Shield, Truck, Code, FileText, ShoppingBag } from 'lucide-react'
 import Link from 'next/link'
 import { cn } from '../../../lib/utils'

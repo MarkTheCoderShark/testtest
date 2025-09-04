@@ -1,7 +1,7 @@
-import { Button } from '@/components/ui/button'
+import { Button } from '../../../components/ui/button'
 import { ArrowRight, Globe, MapPin, Star, Users, TrendingUp, Target, CheckCircle, Phone, Mail, Zap, Code, ShoppingBag, FileText } from 'lucide-react'
 import Link from 'next/link'
-import { Breadcrumb, generateBreadcrumbs } from '@/components/ui/breadcrumb'
+import { Breadcrumb, generateBreadcrumbs } from '../../../components/ui/breadcrumb'
 
 const features = [
   {

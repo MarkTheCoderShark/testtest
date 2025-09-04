@@ -1,4 +1,4 @@
-import { Button } from '@/components/ui/button'
+import { Button } from '../../../components/ui/button'
 import { ArrowRight, Globe, MapPin, Users, BarChart3, Target, Building2, TrendingUp, Code, FileText, ShoppingBag, Zap } from 'lucide-react'
 import Link from 'next/link'
 

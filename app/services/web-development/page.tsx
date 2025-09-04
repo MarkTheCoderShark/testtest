@@ -1,6 +1,6 @@
 'use client'
 
-import { Button } from '@/components/ui/button'
+import { Button } from '../../../components/ui/button'
 import { ArrowRight, Code, Smartphone, Zap, TrendingUp, Users, Shield, BarChart3, Globe, ShoppingBag, Database, Cloud, Server, Layers, FileText, Palette, Cpu, HardDrive } from 'lucide-react'
 import Link from 'next/link'
 
