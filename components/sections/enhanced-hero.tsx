@@ -1,8 +1,8 @@
 "use client"
 
 import { useState, useEffect } from 'react'
-import { Button } from '@/components/ui/button'
-import { EnhancedButton } from '@/components/ui/enhanced-button'
+import { Button } from '../ui/button'
+import { EnhancedButton } from '../ui/enhanced-button'
 import { ArrowRight, Play, CheckCircle, Star, TrendingUp, Users, Award, BarChart3 } from 'lucide-react'
 import Link from 'next/link'
 

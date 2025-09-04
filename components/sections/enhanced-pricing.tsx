@@ -1,9 +1,9 @@
 "use client"
 
 import { useState } from 'react'
-import { Button } from '@/components/ui/button'
-import { EnhancedButton } from '@/components/ui/enhanced-button'
-import { EnhancedCard } from '@/components/ui/enhanced-card'
+import { Button } from '../ui/button'
+import { EnhancedButton } from '../ui/enhanced-button'
+import { EnhancedCard } from '../ui/enhanced-card'
 import { CheckCircle, XCircle, Star, Zap, Crown, Users, ArrowRight, Info, Award } from 'lucide-react'
 
 interface PricingTier {
