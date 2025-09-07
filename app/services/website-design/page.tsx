@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { Button } from '../../../components/ui/button'
-import { ArrowRight, Monitor, Palette, Zap, Users, ShoppingCart, Mail, CheckCircle, Eye, Target, TrendingUp, Award, Clock, DollarSign, Globe, Smartphone, Search, Shield, BarChart3, Star, MessageSquare, Phone, Calendar, Play, Pause, RotateCcw, Sparkles, Layers, Code, Rocket, Crown, Gem, FileText, ShoppingBag } from 'lucide-react'
+import { ArrowRight, Monitor, Palette, Zap, Users, ShoppingCart, Mail, CheckCircle, Eye, Target, TrendingUp, Award, Clock, DollarSign, Globe, Smartphone, Search, Shield, BarChart3, Star, MessageSquare, Phone, Calendar, Sparkles, Layers, Code, Rocket, Crown, Gem, FileText, ShoppingBag } from 'lucide-react'
 import Link from 'next/link'
 
 const features = [
@@ -120,8 +120,6 @@ const designShowcase = [
 ]
 
 export default function WebsiteDesignPage() {
-  const [isPlaying, setIsPlaying] = useState(false)
-  const [currentStep, setCurrentStep] = useState(0)
   const [hoveredFeature, setHoveredFeature] = useState(null)
   const [scrollY, setScrollY] = useState(0)
 
@@ -130,29 +128,6 @@ export default function WebsiteDesignPage() {
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
-
-  useEffect(() => {
-    if (isPlaying) {
-      const interval = setInterval(() => {
-        setCurrentStep((prev) => (prev + 1) % process.length)
-      }, 3000)
-      return () => clearInterval(interval)
-    }
-  }, [isPlaying])
-
-  const startShowcase = () => {
-    setIsPlaying(true)
-    setCurrentStep(0)
-  }
-
-  const stopShowcase = () => {
-    setIsPlaying(false)
-  }
-
-  const resetShowcase = () => {
-    setCurrentStep(0)
-    setIsPlaying(false)
-  }
 
   return (
     <div className="min-h-screen">
@@ -286,37 +261,23 @@ export default function WebsiteDesignPage() {
               A proven methodology that ensures your website design exceeds expectations and drives results.
             </p>
             
-            <div className="flex items-center justify-center space-x-4 mb-12">
-              <Button onClick={startShowcase} disabled={isPlaying} className="bg-green-600 hover:bg-green-700 disabled:bg-gray-400 px-6 py-3">
-                <Play className="w-4 h-4 mr-2" />
-                Start Showcase
-              </Button>
-              <Button onClick={stopShowcase} disabled={!isPlaying} className="bg-red-600 hover:bg-red-700 disabled:bg-gray-400 px-6 py-3">
-                <Pause className="w-4 h-4 mr-2" />
-                Pause
-              </Button>
-              <Button onClick={resetShowcase} variant="outline" className="px-6 py-3">
-                <RotateCcw className="w-4 h-4 mr-2" />
-                Reset
-              </Button>
-            </div>
           </div>
           
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
             {process.map((step, index) => (
-              <div key={step.step} className={`relative text-center transition-all duration-500 ${index === currentStep ? 'scale-110' : 'scale-100'}`}>
+              <div key={step.step} className="relative text-center group hover:scale-105 transition-all duration-500">
                 {index < process.length - 1 && (
                   <div className="hidden lg:block absolute top-1/2 left-full w-full h-0.5 bg-gradient-to-r from-gray-300 to-gray-400 transform -translate-y-1/2 z-0"></div>
                 )}
                 
-                <div className={`relative z-10 bg-white rounded-3xl p-8 shadow-lg border-2 transition-all duration-500 ${index === currentStep ? 'border-primary-500 shadow-2xl shadow-primary-200' : 'border-gray-200'}`}>
+                <div className="relative z-10 bg-white rounded-3xl p-8 shadow-lg border-2 border-gray-200 hover:border-primary-500 hover:shadow-2xl hover:shadow-primary-200 transition-all duration-500">
                   <div className={`w-20 h-20 rounded-full bg-gradient-to-r ${step.color} flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300`}>
                     <step.icon className="h-10 w-10 text-white" />
                   </div>
                   <div className="absolute -top-4 -right-4 w-8 h-8 bg-primary-600 text-white rounded-full flex items-center justify-center text-sm font-bold">
                     {step.step}
                   </div>
-                  <h3 className="text-xl font-bold text-secondary-900 mb-4">{step.title}</h3>
+                  <h3 className="text-xl font-bold text-secondary-900 mb-4 group-hover:text-primary-600 transition-colors">{step.title}</h3>
                   <p className="text-secondary-600 leading-relaxed">{step.description}</p>
                 </div>
               </div>
