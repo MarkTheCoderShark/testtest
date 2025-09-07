@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { testWebsiteSpeed } from '@/lib/pagespeed-api'
+import { testWebsiteSpeed } from '../../../lib/pagespeed-api'
 
 export async function POST(request: NextRequest) {
   try {

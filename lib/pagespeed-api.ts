@@ -105,7 +105,7 @@ function extractMetrics(lighthouseResult: any): PageSpeedMetrics {
 }
 
 function extractOpportunities(lighthouseResult: any) {
-  const opportunities = []
+  const opportunities: any[] = []
   const audits = lighthouseResult.audits
   
   // Extract high-impact opportunities
@@ -133,7 +133,7 @@ function extractOpportunities(lighthouseResult: any) {
 }
 
 function extractDiagnostics(lighthouseResult: any) {
-  const diagnostics = []
+  const diagnostics: any[] = []
   const audits = lighthouseResult.audits
   
   const diagnosticAudits = [
