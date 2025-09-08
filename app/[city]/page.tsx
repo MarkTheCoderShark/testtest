@@ -102,6 +102,15 @@ const servicesByCategory = allServices.reduce((acc, service) => {
   return acc
 }, {} as Record<string, typeof allServices>)
 
+// Generate static params for static export
+export async function generateStaticParams() {
+  const cities = Object.keys(cityData)
+  
+  return cities.map((city) => ({
+    city,
+  }))
+}
+
 export async function generateMetadata({ params }: CityPageProps): Promise<Metadata> {
   const city = cityData[params.city]
   if (!city) return { title: 'City Not Found' }
