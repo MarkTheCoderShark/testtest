@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { Button } from "../ui/button"
-import { ArrowRight, Star, Users, TrendingUp, Zap, CheckCircle, Shield, Clock } from "lucide-react"
+import { ArrowRight, Star, Users, TrendingUp, Zap, CheckCircle, Shield, Clock, Play } from "lucide-react"
 import { useState, useEffect } from "react"
 // import { useConversionTracking } from "../../hooks/useConversionTracking"
 // import ScrollTracker from "../analytics/scroll-tracker"
