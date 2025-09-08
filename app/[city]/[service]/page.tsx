@@ -719,6 +719,26 @@ const serviceData: Record<string, {
   }
 }
 
+// Generate static params for static export
+export async function generateStaticParams() {
+  const cities = Object.keys(cityData)
+  const services = Object.keys(serviceData)
+  
+  const params = []
+  
+  // Generate all valid combinations of city and service
+  for (const city of cities) {
+    for (const service of services) {
+      params.push({
+        city,
+        service
+      })
+    }
+  }
+  
+  return params
+}
+
 // Generate metadata for the page
 export async function generateMetadata({ params }: CityServicePageProps): Promise<Metadata> {
   const city = cityData[params.city]
