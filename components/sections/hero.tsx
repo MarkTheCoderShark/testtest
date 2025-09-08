@@ -2,25 +2,36 @@
 
 import Link from "next/link"
 import { Button } from "../ui/button"
-import { ArrowRight, Play, Star, Users, TrendingUp, Zap, Target, Award } from "lucide-react"
+import { ArrowRight, Star, Users, TrendingUp, Zap, CheckCircle, Shield, Clock } from "lucide-react"
+import { useState, useEffect } from "react"
 // import { useConversionTracking } from "../../hooks/useConversionTracking"
 // import ScrollTracker from "../analytics/scroll-tracker"
 
 const stats = [
-  { id: 1, name: "Projects Completed", value: "500+", icon: TrendingUp, color: "from-green-400 to-emerald-500" },
-  { id: 2, name: "Happy Clients", value: "500+", icon: Users, color: "from-blue-400 to-cyan-500" },
-  { id: 3, name: "ROI Average", value: "1,200%", icon: Zap, color: "from-red-400 to-pink-500" },
+  { id: 1, name: "Client ROI Average", value: "1,200%", icon: TrendingUp, color: "from-emerald-500 to-teal-600" },
+  { id: 2, name: "Happy Clients", value: "500+", icon: Users, color: "from-blue-500 to-indigo-600" },
+  { id: 3, name: "Years of Excellence", value: "15+", icon: Shield, color: "from-purple-500 to-pink-600" },
 ]
 
 const reviews = [
-  { id: 1, rating: 5, text: "Outstanding results and professional service", author: "Sarah M." },
-  { id: 2, rating: 5, text: "Transformed our online presence completely", author: "Mike R." },
-  { id: 3, rating: 5, text: "Best investment we've made this year", author: "Jennifer L." },
+  { id: 1, rating: 5, text: "300% organic traffic growth in 6 months", author: "Sarah M., Tech CEO" },
+  { id: 2, rating: 5, text: "Doubled our revenue with their SEO strategy", author: "Mike R., Legal Firm" },
+  { id: 3, rating: 5, text: "Best ROI we've seen from any marketing agency", author: "Jennifer L., Healthcare" },
 ]
 
 export function Hero() {
   // Temporarily disabled conversion tracking to fix build error
   // const { trackCTAClick, trackStrategySession } = useConversionTracking()
+  const [isVisible, setIsVisible] = useState(false)
+  const [currentReview, setCurrentReview] = useState(0)
+
+  useEffect(() => {
+    setIsVisible(true)
+    const interval = setInterval(() => {
+      setCurrentReview((prev) => (prev + 1) % reviews.length)
+    }, 4000)
+    return () => clearInterval(interval)
+  }, [])
 
   const handleCTAClick = (buttonText: string, location: string) => {
     // trackCTAClick(buttonText, location)
@@ -148,28 +159,35 @@ export function Hero() {
           </dl>
         </div>
 
-        {/* Social Proof */}
-        <div className="mx-auto mt-16 max-w-4xl">
-          <div className="rounded-2xl bg-white/10 backdrop-blur-md p-4 sm:p-6 lg:p-8 shadow-2xl ring-1 ring-white/20 border border-white/10">
-            <div className="flex flex-col sm:flex-row items-center justify-center space-y-2 sm:space-y-0 sm:space-x-1 mb-4">
-              <div className="flex items-center space-x-1">
+        {/* Dynamic Social Proof Carousel */}
+        <div className={`mx-auto mt-16 max-w-3xl transition-all duration-1000 delay-700 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+          <div className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-slate-800/50 to-slate-700/50 backdrop-blur-sm p-8 border border-white/10">
+            <div className="absolute top-4 right-4">
+              <div className="flex gap-1">
                 {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-4 w-4 sm:h-5 sm:w-5 fill-yellow-400 text-yellow-400" />
+                  <Star key={i} className="h-4 w-4 fill-yellow-500 text-yellow-500" />
                 ))}
               </div>
-              <span className="text-xs sm:text-sm font-medium text-white">4.9/5 from 200+ reviews</span>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              {reviews.map((review) => (
-                <div key={review.id} className="text-center">
-                  <div className="flex items-center justify-center space-x-1 mb-2">
-                    {[...Array(review.rating)].map((_, i) => (
-                      <Star key={i} className="h-3 w-3 sm:h-4 sm:w-4 fill-yellow-400 text-yellow-400" />
-                    ))}
-                  </div>
-                  <p className="text-xs sm:text-sm text-white/80 mb-1">"{review.text}"</p>
-                  <p className="text-xs font-medium text-white/90">— {review.author}</p>
+            <div className="relative h-24">
+              {reviews.map((review, index) => (
+                <div
+                  key={review.id}
+                  className={`absolute inset-0 transition-all duration-500 ${currentReview === index ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-full'}`}
+                >
+                  <p className="text-lg text-white/90 mb-4 italic">"{review.text}"</p>
+                  <p className="text-sm font-medium text-emerald-400">— {review.author}</p>
                 </div>
+              ))}
+            </div>
+            <div className="flex justify-center gap-2 mt-6">
+              {reviews.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentReview(index)}
+                  className={`w-2 h-2 rounded-full transition-all ${currentReview === index ? 'bg-emerald-500 w-8' : 'bg-white/30'}`}
+                  aria-label={`Go to review ${index + 1}`}
+                />
               ))}
             </div>
           </div>
