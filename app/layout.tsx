@@ -10,7 +10,6 @@ const inter = Inter({
   subsets: ['latin'],
   variable: '--font-inter',
   display: 'swap',
-  preload: true,
 })
 
 const poppins = Poppins({ 
@@ -18,7 +17,6 @@ const poppins = Poppins({
   weight: ['400', '500', '600', '700', '800'],
   variable: '--font-poppins',
   display: 'swap',
-  preload: true,
 })
 
 export const metadata: Metadata = {
@@ -208,7 +206,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="antialiased bg-white">
+      <body className={`${inter.className} antialiased bg-white`}>
         {/* <GoogleAnalytics /> */}
         <PerformanceMonitor />
         <Header />
